@@ -27,12 +27,12 @@ All pages are built with Django templates, Bootstrap, and custom CSS, with data 
 <img src="docs/screenshots/main_second_part.png" width="70%"/>
 </p>
 
-##  🏁 Teams Page
+## 🏁 Teams Page
 <p align="center">
 <img src="docs/screenshots/teams.png" width="70%" align="center"/>
 </p>
 
-##  🏁  Team Details (Different Team Styles)
+## 🏁 Team Details (Different Team Styles)
 <p align="center">
   <img src="docs/screenshots/teams_mclaren.png" width="45%"/>
   <img src="docs/screenshots/teams_williams.png" width="45%"/>
