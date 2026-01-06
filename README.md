@@ -18,6 +18,8 @@ Frontend: HTML, CSS, Bootstrap, JavaScript
 Media & Static: Django static and media files
 
 ## Screenshots
+The screenshots above demonstrate the main pages and functionality of the Formula 1 fan web application.
+All pages are built with Django templates, Bootstrap, and custom CSS, with data loaded dynamically from a PostgreSQL database.
 
 ## Home Page
 <p align="center">
@@ -36,10 +38,18 @@ Media & Static: Django static and media files
   <img src="docs/screenshots/teams_williams.png" width="45%" />
 </p>
 
+<p align="center">
+  <em>10 team pages generated using Django templates</em>
+</p>
+
 ## Driver Details (Different Driver Cards)
 <p align="center">
   <img src="docs/screenshots/driver.png" width="45%" />
   <img src="docs/screenshots/drivers.png" width="45%" />
+</p>
+
+<p align="center">
+  <em>20 driver pages generated using Django templates</em>
 </p>
 
 ## Tracks
