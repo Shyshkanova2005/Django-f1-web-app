@@ -1,0 +1,723 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Circuits{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'main/circuits.css' %}">
+{% endblock %}
+
+{% block content %}
+<main class="container pt-5 text-dark">
+<h1 class="main-header">Formula 1 Circuits 2025</h1>
+<div class="overview-container">
+    <div class="overview-header">
+        <div class="overview-title">🏁 Circuit Overview</div>
+        <div class="overview-subtitle">24 circuits worldwide</div>
+    </div>
+    <div class="overview-stats">
+        <div class="stat-box">
+            <div class="stat-number">24</div>
+            <div class="stat-description">Total Circuits</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">21</div>
+            <div class="stat-description">Countries</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">6</div>
+            <div class="stat-description">Sprint Weekends</div>
+        </div>
+    </div>
+</div>
+<div class="cards-container">
+<div class="track-card-wrapper">
+        <h1 class="track-title">Japan</h1>
+<div class="infographic-container">
+    <div class="track-map">
+        <img src="{% static 'main/photo/Japan_Circuit.avif' %}">
+    </div>
+    
+    <div class="stats-info">
+        <div class="big-number-group">
+            <div class="stat-label">Circuit Length</div>
+            <div class="big-number">5.807<span class="unit">km</span></div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">First Grand Prix</div>
+                <div class="stat-value highlight">1987</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Number of Laps</div>
+                <div class="stat-value">53</div>
+            </div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">Fastest lap time</div>
+                <div class="stat-value">1:30.965</div>
+                <div class="stat-label small">Kimi Antonelli (2025)</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Race Distance</div>
+                <div class="stat-value">307.471km</div>
+            </div>
+        </div>
+    </div>
+</div>
+ </div>
+
+<div class="track-card-wrapper">
+      <h1 class="track-title">Australia</h1>
+<div class="infographic-container">
+    <div class="track-map">
+        <img src="{% static 'main/photo/Australia_Circuit.avif' %}">
+    </div>
+    
+    <div class="stats-info">
+        <div class="big-number-group">
+            <div class="stat-label">Circuit Length</div>
+            <div class="big-number">5.278<span class="unit">km</span></div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">First Grand Prix</div>
+                <div class="stat-value highlight">1996</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Number of Laps</div>
+                <div class="stat-value">58</div>
+            </div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">Fastest lap time</div>
+                <div class="stat-value">1:19.813</div>
+                <div class="stat-label small">Charles Leclerc (2024)</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Race Distance</div>
+                <div class="stat-value">306.124km</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="track-card-wrapper">
+     <h1 class="track-title">China</h1>   
+<div class="infographic-container">
+    <div class="track-map">
+        <img src="{% static 'main/photo/shanghai.webp' %}">
+    </div>
+    
+    <div class="stats-info">
+        <div class="big-number-group">
+            <div class="stat-label">Circuit Length</div>
+            <div class="big-number">5.451<span class="unit">km</span></div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">First Grand Prix</div>
+                <div class="stat-value highlight">2004</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Number of Laps</div>
+                <div class="stat-value">56</div>
+            </div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">Fastest lap time</div>
+                <div class="stat-value">1:32.238</div>
+                <div class="stat-label small">Michael Schumacher (2004)</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Race Distance</div>
+                <div class="stat-value">305.066km</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="track-card-wrapper">
+    <h1 class="track-title">Saudi Arabian</h1>
+<div class="infographic-container">
+    <div class="track-map">
+        <img src="{% static 'main/photo/Saudi_Arabia_Circuit.avif' %}">
+    </div>
+    
+    <div class="stats-info">
+        <div class="big-number-group">
+            <div class="stat-label">Circuit Length</div>
+            <div class="big-number">6.174<span class="unit">km</span></div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">First Grand Prix</div>
+                <div class="stat-value highlight">2021</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Number of Laps</div>
+                <div class="stat-value">50</div>
+            </div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">Fastest lap time</div>
+                <div class="stat-value">1:30.734</div>
+                <div class="stat-label small">Lewis Hamilton (2021)</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Race Distance</div>
+                <div class="stat-value">308.45km</div>
+            </div>
+        </div>
+    </div>
+</div>    
+</div>
+
+<div class="track-card-wrapper">
+    <h1 class="track-title">Miami</h1>
+<div class="infographic-container">
+    <div class="track-map">
+        <img src="{% static 'main/photo/miami.webp' %}">
+    </div>
+    
+    <div class="stats-info">
+        <div class="big-number-group">
+            <div class="stat-label">Circuit Length</div>
+            <div class="big-number">5.412<span class="unit">km</span></div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">First Grand Prix</div>
+                <div class="stat-value highlight">2022</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Number of Laps</div>
+                <div class="stat-value">57</div>
+            </div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">Fastest lap time</div>
+                <div class="stat-value">1:29.708</div>
+                <div class="stat-label small">Max Verstappen (2023)</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Race Distance</div>
+                <div class="stat-value">308.326km</div>
+            </div>
+        </div>
+    </div>
+</div>    
+</div>
+
+<div class="track-card-wrapper">
+    <h1 class="track-title">Emilia-Romagna</h1>
+<div class="infographic-container">
+    <div class="track-map">
+        <img src="{% static 'main/photo/Emilia_Romagna_Circuit.avif' %}">
+    </div>
+    
+    <div class="stats-info">
+        <div class="big-number-group">
+            <div class="stat-label">Circuit Length</div>
+            <div class="big-number">4.909<span class="unit">km</span></div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">First Grand Prix</div>
+                <div class="stat-value highlight">1980</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Number of Laps</div>
+                <div class="stat-value">63</div>
+            </div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">Fastest lap time</div>
+                <div class="stat-value">1:15.484</div>
+                <div class="stat-label small">Lewis Hamilton (2020)</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Race Distance</div>
+                <div class="stat-value">309.049km</div>
+            </div>
+        </div>
+    </div>
+</div>    
+</div>
+
+<div class="track-card-wrapper">
+    <h1 class="track-title">Monaco</h1>
+<div class="infographic-container">
+    <div class="track-map">
+        <img src="{% static 'main/photo/monaco.webp' %}">
+    </div>
+    
+    <div class="stats-info">
+        <div class="big-number-group">
+            <div class="stat-label">Circuit Length</div>
+            <div class="big-number">3.337<span class="unit">km</span></div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">First Grand Prix</div>
+                <div class="stat-value highlight">1950</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Number of Laps</div>
+                <div class="stat-value">78</div>
+            </div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">Fastest lap time</div>
+                <div class="stat-value">1:12.909</div>
+                <div class="stat-label small">Lewis Hamilton (2021)</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Race Distance</div>
+                <div class="stat-value">309.049km</div>
+            </div>
+        </div>
+    </div>
+</div>    
+</div>
+
+<div class="track-card-wrapper">
+    <h1 class="track-title">Spain</h1>
+<div class="infographic-container">
+    <div class="track-map">
+        <img src="{% static 'main/photo/catalunya.webp' %}">
+    </div>
+    
+    <div class="stats-info">
+        <div class="big-number-group">
+            <div class="stat-label">Circuit Length</div>
+            <div class="big-number">4.657<span class="unit">km</span></div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">First Grand Prix</div>
+                <div class="stat-value highlight">1991</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Number of Laps</div>
+                <div class="stat-value">66</div>
+            </div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">Fastest lap time</div>
+                <div class="stat-value">1:15.743</div>
+                <div class="stat-label small">Oscar Piastri (2025)</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Race Distance</div>
+                <div class="stat-value">307.236km</div>
+            </div>
+        </div>
+    </div>
+</div>    
+</div>
+
+<div class="track-card-wrapper">
+    <h1 class="track-title">Canada</h1>
+<div class="infographic-container">
+    <div class="track-map">
+        <img src="{% static 'main/photo/Canada_Circuit.avif' %}">
+    </div>
+    
+    <div class="stats-info">
+        <div class="big-number-group">
+            <div class="stat-label">Circuit Length</div>
+            <div class="big-number">4.361<span class="unit">km</span></div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">First Grand Prix</div>
+                <div class="stat-value highlight">1978</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Number of Laps</div>
+                <div class="stat-value">70</div>
+            </div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">Fastest lap time</div>
+                <div class="stat-value">1:13.078</div>
+                <div class="stat-label small">Valtteri Bottas (2019)</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Race Distance</div>
+                <div class="stat-value">305.27km</div>
+            </div>
+        </div>
+    </div>
+</div>    
+</div>
+
+<div class="track-card-wrapper">
+    <h1 class="track-title">Austria</h1>
+<div class="infographic-container">
+    <div class="track-map">
+        <img src="{% static 'main/photo/Australia_Circuit.avif' %}">
+    </div>
+    
+    <div class="stats-info">
+        <div class="big-number-group">
+            <div class="stat-label">Circuit Length</div>
+            <div class="big-number">4.326<span class="unit">km</span></div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">First Grand Prix</div>
+                <div class="stat-value highlight">1970</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Number of Laps</div>
+                <div class="stat-value">71</div>
+            </div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">Fastest lap time</div>
+                <div class="stat-value">1:07.924</div>
+                <div class="stat-label small">Oscar Piastri (2025)</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Race Distance</div>
+                <div class="stat-value">307.018km</div>
+            </div>
+        </div>
+    </div>
+</div>    
+</div>
+
+<div class="track-card-wrapper">
+    <h1 class="track-title">Great Britain</h1>
+<div class="infographic-container">
+    <div class="track-map">
+        <img src="{% static 'main/photo/Great_Britain_Circuit.avif' %}">
+    </div>
+    
+    <div class="stats-info">
+        <div class="big-number-group">
+            <div class="stat-label">Circuit Length</div>
+            <div class="big-number">5.891<span class="unit">km</span></div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">First Grand Prix</div>
+                <div class="stat-value highlight">1950</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Number of Laps</div>
+                <div class="stat-value">52</div>
+            </div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">Fastest lap time</div>
+                <div class="stat-value">1:27.097</div>
+                <div class="stat-label small">Max Verstappen (2020)</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Race Distance</div>
+                <div class="stat-value">306.198km</div>
+            </div>
+        </div>
+    </div>
+</div>    
+</div>
+
+<div class="track-card-wrapper">
+    <h1 class="track-title">Belgium</h1>
+<div class="infographic-container">
+    <div class="track-map">
+        <img src="{% static 'main/photo/spa.webp' %}">
+    </div>
+    
+    <div class="stats-info">
+        <div class="big-number-group">
+            <div class="stat-label">Circuit Length</div>
+            <div class="big-number">7.004<span class="unit">km</span></div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">First Grand Prix</div>
+                <div class="stat-value highlight">1950</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Number of Laps</div>
+                <div class="stat-value">44
+            </div>
+    </div>
+    </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">Fastest lap time</div>
+                <div class="stat-value">1:44.701</div>
+                <div class="stat-label small">Sergio Perez (2024)</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Race Distance</div>
+                <div class="stat-value">308.052km</div>
+            </div>
+        </div>
+    </div>
+</div>    
+</div>
+
+<div class="track-card-wrapper">
+    <h1 class="track-title">Netherlands</h1>
+<div class="infographic-container">
+    <div class="track-map">
+        <img src="{% static 'main/photo/zandvoort.webp' %}">
+    </div>
+    
+    <div class="stats-info">
+        <div class="big-number-group">
+            <div class="stat-label">Circuit Length</div>
+            <div class="big-number">4.259<span class="unit">km</span></div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">First Grand Prix</div>
+                <div class="stat-value highlight">1952</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Number of Laps</div>
+                <div class="stat-value">72</div>
+            </div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">Fastest lap time</div>
+                <div class="stat-value">1:11.097</div>
+                <div class="stat-label small">Lewis Hamilton (2021)</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Race Distance</div>
+                <div class="stat-value">306.587km</div>
+            </div>
+        </div>
+    </div>
+</div>    
+</div>
+
+<div class="track-card-wrapper">
+    <h1 class="track-title">Las Vegas</h1>
+<div class="infographic-container">
+    <div class="track-map">
+        <img src="{% static 'main/photo/vegas.webp' %}">
+    </div>
+    
+    <div class="stats-info">
+        <div class="big-number-group">
+            <div class="stat-label">Circuit Length</div>
+            <div class="big-number">6.201<span class="unit">km</span></div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">First Grand Prix</div>
+                <div class="stat-value highlight">2023</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Number of Laps</div>
+                <div class="stat-value">50</div>
+            </div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">Fastest lap time</div>
+                <div class="stat-value">1:33.365</div>
+                <div class="stat-label small">Max Verstappen (2025)</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Race Distance</div>
+                <div class="stat-value">309.958km</div>
+            </div>
+        </div>
+    </div>
+</div>    
+</div>
+
+<div class="track-card-wrapper">
+    <h1 class="track-title">Qatar</h1>
+<div class="infographic-container">
+    <div class="track-map">
+        <img src="{% static 'main/photo/losail.webp' %}">
+    </div>
+    
+    <div class="stats-info">
+        <div class="big-number-group">
+            <div class="stat-label">Circuit Length</div>
+            <div class="big-number">5.419<span class="unit">km</span></div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">First Grand Prix</div>
+                <div class="stat-value highlight">2021</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Number of Laps</div>
+                <div class="stat-value">57</div>
+            </div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">Fastest lap time</div>
+                <div class="stat-value">1:22.384</div>
+                <div class="stat-label small">Lando Norris (2024)</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Race Distance</div>
+                <div class="stat-value">308.611km</div>
+            </div>
+        </div>
+    </div>
+</div>    
+</div>
+
+<div class="track-card-wrapper">
+    <h1 class="track-title">Abu Dhabi</h1>
+<div class="infographic-container">
+    <div class="track-map">
+        <img src="{% static 'main/photo/yas_marina.webp' %}">
+    </div>
+    
+    <div class="stats-info">
+        <div class="big-number-group">
+            <div class="stat-label">Circuit Length</div>
+            <div class="big-number">5.281<span class="unit">km</span></div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">First Grand Prix</div>
+                <div class="stat-value highlight">2009</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Number of Laps</div>
+                <div class="stat-value">58</div>
+            </div>
+        </div>
+        
+        <hr class="divider">
+        
+        <div class="stat-row">
+            <div class="stat-item">
+                <div class="stat-label">Fastest lap time</div>
+                <div class="stat-value">1:25.637</div>
+                <div class="stat-label small">Kevin Magnussen (2024)</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Race Distance</div>
+                <div class="stat-value">306.183km</div>
+            </div>
+        </div>
+    </div>
+</div>    
+</div>
+</div>
+</main>
+{% endblock %}

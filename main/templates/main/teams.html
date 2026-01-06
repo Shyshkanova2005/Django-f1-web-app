@@ -1,0 +1,177 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Teams{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'main/teams.css' %}">
+{% endblock %}
+{% block content %}
+<main class="container pt-5 text-dark">
+<div class="container">
+    <div class="row mb-4">
+        <div class="col">
+            <h3 style="font-weight: 800;">F1 TEAMS 2025</h3>
+        </div>
+    </div>
+    
+    <div class="row row-cols-1 row-cols-lg-2 g-4">
+         <div class="col d-flex"> 
+            <a href="{% url 'team_detail' team_slug='mclaren' %}" class="flex-fill text-decoration-none" style="color: inherit;">
+            <div class="rating-card mclaren-bg flex-fill"> 
+                <div class="card-img-overlay">
+                    <div class="tema-name">McLaren</div>
+                    <div class="driver-info">
+                        <h5>Oscar Piastri</h5>
+                        <h5>Lando Norris</h5>
+                    </div>
+                </div>
+                <img src="{% static 'main/photo/2025mclarencarright.avif' %}" class="card-img" alt="McLaren">
+            </div>
+            </a> 
+        </div>
+
+       <div class="col d-flex">
+        <a href="{% url 'team_detail' team_slug='mercedes' %}" class="flex-fill text-decoration-none" style="color: inherit;">
+        <div class="rating-card mercedes-bg flex-fill">
+            <div class="card-img-overlay">
+                <div class="tema-name">Mercedes</div>
+                <div class="driver-info">
+                    <h5>George Russell</h5>
+                    <h5>Kimi Antonelli</h5>
+                </div>
+            </div>
+            <img src="{% static 'main/photo/2025mercedescarright.avif' %}" class="card-img" alt="Mercedes">
+        </div>
+    </a>
+</div>
+
+
+    <div class="col">
+    <a href="{% url 'team_detail' team_slug='redbull' %}" class="text-decoration-none" style="color: inherit;">
+        <div class="rating-card redbull-bg">
+            <div class="card-img-overlay">
+                <div class="tema-name">Red Bull Racing</div>
+                <div class="driver-info">
+                    <h5>Max Verstappen</h5>
+                    <h5>Yuki Tsunoda</h5>
+                </div>
+            </div>
+            <img src="{% static 'main/photo/2025redbullracingcarright.avif' %}" class="card-img" alt="Red Bull Racing">
+        </div>
+    </a>
+</div>
+
+        <div class="col">
+            <a href="{% url 'team_detail' team_slug='ferrari' %}" class="text-decoration-none" style="color: inherit;">
+            <div class="rating-card ferrari-bg">
+                <div class="card-img-overlay">
+                    <div class="tema-name">Ferrari</div>
+                    <div class="driver-info">
+                        <h5>Charles Leclerc</h5>
+                        <h5>Lewis Hamilton</h5>
+                    </div>
+                </div>
+            <img src="{% static 'main/photo/2025ferraricarright.avif' %}" class="card-img" alt="Ferrari">
+            </div>    
+            </a>
+        </div>
+
+        <div class="col">
+             <a href="{% url 'team_detail' team_slug='astonmartin' %}" class="flex-fill text-decoration-none" style="color: inherit;">
+            <div class="rating-card aston-martin-bg">
+                <div class="card-img-overlay">
+                    <div class="tema-name">Aston Martin</div>
+                    <div class="driver-info">
+                        <h5>Fernando Alonso</h5>
+                        <h5>Lance Stroll</h5>
+                    </div>
+                </div>
+             <img src="{% static 'main/photo/2025astonmartincarright.avif' %}" class="card-img" alt="Aston Martin">
+            </div>    
+             </a>
+            
+        </div>
+
+        <div class="col">
+             <a href="{% url 'team_detail' team_slug='alpine' %}" class="flex-fill text-decoration-none" style="color: inherit;">
+            <div class="rating-card alpine-bg">
+                <div class="card-img-overlay">
+                    <div class="tema-name">Alpine</div>
+                    <div class="driver-info">
+                        <h5>Pierre Gasly</h5>
+                        <h5>Franco Colapinto</h5>
+                    </div>
+                </div>
+             <img src="{% static 'main/photo/2025alpinecarright.avif' %}" class="card-img" alt="Alpine">
+            </div>    
+             </a>
+            
+        </div>
+
+        <div class="col">
+             <a href="{% url 'team_detail' team_slug='williams' %}" class="flex-fill text-decoration-none" style="color: inherit;">
+              <div class="rating-card williams-bg">
+                <div class="card-img-overlay">
+                    <div class="tema-name">Williams</div>
+                    <div class="driver-info">
+                        <h5>Carlos Sainz</h5>
+                        <h5>Alex Albon</h5>
+                    </div>
+                </div>
+            <img src="{% static 'main/photo/2025williamscarright.avif' %}" class="card-img" alt="Williams">
+            </div>  
+             </a>
+        </div>
+
+        <div class="col">
+             <a href="{% url 'team_detail' team_slug='haas' %}" class="flex-fill text-decoration-none" style="color: inherit;">
+            <div class="rating-card haas-bg">
+                <div class="card-img-overlay">
+                    <div class="tema-name">Haas F1 Team</div>
+                    <div class="driver-info">
+                        <h5>Esteban Ocon</h5>
+                        <h5>Oliver Bearman</h5>
+                    </div>
+                </div>
+            <img src="{% static 'main/photo/2025haasf1teamcarright.avif' %}" class="card-img" alt="Haas">
+            </div>    
+            </a>
+        </div>
+
+        <div class="col">
+             <a href="{% url 'team_detail' team_slug='sauber' %}" class="flex-fill text-decoration-none" style="color: inherit;">
+             <div class="rating-card sauber-bg">
+                <div class="card-img-overlay">
+                    <div class="tema-name">Kick Sauber</div>
+                    <div class="driver-info">
+                        <h5>Nico Hülkenberg</h5>
+                        <h5>Gabriel Bortoleto</h5>
+                    </div>
+                </div>
+            <img src="{% static 'main/photo/2025kicksaubercarright.avif' %}" class="card-img" alt="Kick Sauber">
+            </div>   
+             </a>
+            
+        </div>
+
+        <div class="col">
+            <a href="{% url 'team_detail' team_slug='racingbulls' %}" class="flex-fill text-decoration-none" style="color: inherit;">
+               <div class="rating-card racing_bulls-bg">
+                <div class="card-img-overlay">
+                    <div class="tema-name">Racing Bulls</div>
+                    <div class="driver-info">
+                        <h5>Isack Hadjar</h5>
+                        <h5>Liam Lawson</h5>
+                    </div>
+                </div>
+            <img src="{% static 'main/photo/2025racingbullscarright.avif' %}" class="card-img" alt="Racing Bulls">
+            </div> 
+            </a>
+            
+        </div>
+
+    </div>
+</div>
+</main>
+{% endblock %}

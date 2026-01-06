@@ -1,0 +1,563 @@
+body {
+    background-color: #fff; 
+    font-family: 'Oswald', sans-serif !important;;
+}
+
+.bolide-page-wrapper {
+    overflow: visible !important;
+}
+
+.bolide-section {
+    min-height: 70vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+    background: radial-gradient(circle at 90% 40%, rgba(255, 180, 50, 0.4) 0%, transparent 50%), linear-gradient(180deg, #2e3d51 0%, #5a6b82 20%, #ffffff 90%, #e0e0e0 100%);
+}
+
+.f1-bg-text-giant {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(180px, 24vw, 360px);
+    font-weight: 900;
+    letter-spacing: .15em;
+    color: transparent;
+    -webkit-text-stroke: 1.5px rgba(255,255,255,0.35);
+    pointer-events: none;
+    user-select: none;
+    z-index: 1;
+}
+
+.f1-hero-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+    font-size: clamp(48px, 6vw, 84px);
+    line-height: 0.95;
+    color: #0b1f3a;
+}
+
+.f1-hero-title span {
+    color: #e10600;
+}
+
+.f1-hero-subtitle {
+    font-size: 13px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: rgba(20,20,20,.65);
+    margin-top: 12px;
+}
+
+.car-shadow {
+    filter: drop-shadow(0 25px 15px rgba(0, 0, 0, 0.2));
+}
+
+.animate-car-left {
+    animation: carEnterLeft 1.2s ease-out forwards;
+}
+
+@keyframes carEnterLeft {
+    from {
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.animate-car-right {
+    animation: carEnterRight 1.2s ease-out forwards;
+}
+
+@keyframes carEnterRight {
+    from {
+        transform: translateX(120px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.calendar-section h2 {
+    color: #000;
+}
+
+.calendar-slider-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.calendar-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 10px;
+}
+
+.calendar-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.cal-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin: 0 5px;
+}
+
+.result-card {
+    min-width: 260px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    flex-shrink: 0;
+}
+
+.flag-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.race-flag {
+    width: 28px;      
+    height: auto;
+    border-radius: 4px; 
+    margin-right: 8px;
+}
+
+.card-title-with-flag {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.status-label {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: #eee;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.completed .status-label { background: #a1a1a1; color: white; }
+.next .status-label { background: #ff0000; color: white; }
+.upcoming .status-label { background: #ffe100; }
+
+.drivers-slider {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+.drivers-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.drivers-track {
+    display: flex;
+    gap: 15px; 
+    padding-bottom: 20px; 
+}
+
+.driver-card {
+    position: relative; 
+    width: 210px;
+    min-width: 210px; 
+    height: 380px;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.driver-card img {
+    position: relative;
+    z-index: 3; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: top center;
+}
+
+.driver-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    z-index: 4; 
+    color: white;
+    font-weight: 800; 
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9); 
+}
+
+.driver-name h3 {
+    font-size: 24px; 
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.driver-card:hover {
+    transform: scale(1.05); 
+    z-index: 10;
+}
+
+.drivers-header-wrapper {
+    background-color: transparent; 
+    z-index: 10;
+}
+
+.drivers-header-wrapper h2 {
+    font-size: 32px;
+    font-weight: 800; 
+    color: black;      
+    margin: 0;
+}
+
+.container.py-4 {
+    padding-top: 60px; 
+}
+
+.rating-card.redbull-bg {
+    background: linear-gradient(135deg, #00124d 0%, #002d75 100%); 
+}
+
+.rating-card.mclaren-bg {
+    background: linear-gradient(135deg, #FF6F00 0%, #FF2800 100%);
+}
+
+.rating-card {
+    position: relative;
+    height: 250px; 
+    border-radius: 12px;
+    overflow: hidden; 
+    color: white; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    padding: 0; 
+}
+
+.rating-card img {
+    position: absolute;
+    width: 70%; 
+    height: 100%; 
+    object-fit: cover; 
+    object-position: right top; 
+    right: -25px;
+    top: 0; 
+    z-index: 1;
+    opacity: 0.7; 
+}
+
+.rating-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: 2; 
+}
+
+.rating-card .card-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    z-index: 3; 
+}
+
+.driver-pos {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+
+    font-size: 32px;
+    font-weight: 900;
+    color: white;
+    line-height: 1;
+    z-index: 10;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.6);
+}
+
+.driver-pos sup {
+    font-size: 55%;
+}
+
+.driver-info {
+    position: absolute;
+    top: 65px;     
+    left: 20px;
+    z-index: 10;
+}
+
+.driver-info h5 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    line-height: 1.2;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+}
+
+.driver-info p {
+    margin: 3px 0;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.9;
+    color: white;
+}
+
+.driver-info .driver-flag {
+    margin-top: 6px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+}
+
+.driver-pts {
+    position: absolute;
+    bottom: 20px; 
+    left: 20px; 
+    z-index: 4;
+    text-align: left; 
+    line-height: 1;
+}
+
+.driver-pts p {
+    font-size: 32px;
+    font-weight: 900;
+    margin: 0;
+    color: white;
+    text-shadow: 0 4px 6px rgba(0,0,0,0.6);
+}
+
+.pts-label {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.australia-flag {
+    background-image: url("photo/australia.png"); 
+}
+
+.netherlands-flag{
+    background-image: url("photo/netherlands.png");
+}
+
+.united-kingdom-flag {
+    background-image: url("photo/united-kingdom.png");
+}
+
+.table-switcher {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.switch-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e0e0e0;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+#driversTable, #teamsTable {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+#driversTable h2, #teamsTable h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.table-wrapper {
+    background: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    align-items: center;
+}
+
+.table-bordered {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.table-bordered thead th {
+    background: #f4f4f4;
+    padding: 14px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #444;
+    border: none;
+}
+
+.table-bordered tbody tr {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.table-bordered tbody tr:nth-child(odd) {
+    background: #ffffff;
+}
+
+.table-bordered tbody td {
+    padding: 14px 18px;
+    font-size: 16px;
+    color: #111;
+    border-top: none;
+    vertical-align: middle;
+}
+
+.table-bordered tbody td:first-child {
+    text-align: center;
+    width: 45px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.driver-cell {
+    font-weight: 600;
+    font-size: 17px;
+    text-align: left;
+}
+
+#driversTable .team-cell {
+    text-align: center;   
+    vertical-align: middle;
+}
+
+#driversTable .nationality-cell {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: flex-start;
+    white-space: nowrap;  
+}
+
+.pts-col {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.team-logo {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff; 
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;        
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;           
+    padding: 5px;               
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+.team-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;    
+}
+
+.driver-card.verstappen-bg,
+.driver-card.tsunoda-bg {
+    background: linear-gradient(90deg,#060C1F 0%,#0B1A4A 100%);
+}
+
+.driver-card.norris-bg,
+.driver-card.piastri-bg {
+    background: linear-gradient(160deg, #D86A00 0%, #E6A66A 80%);
+}
+
+.driver-card.russell-bg,
+.driver-card.antonelli-bg {
+    background: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 50%), radial-gradient(circle at 80% 50%, #00c2ba 0%, #00a19b 100%);
+}
+
+.driver-card.leclerc-bg,
+.driver-card.hamilton-bg {
+   background: linear-gradient(90deg, #000000 0%, #a6051a 100%);
+}
+
+.driver-card.albon-bg,
+.driver-card.sainz-bg {
+    background: linear-gradient(160deg, #37B2E5 0%, #005BAC 80%);
+}
+
+.driver-card.lawson-bg,
+.driver-card.hadjar-bg {
+    background: linear-gradient(135deg, #6692FF 0%, #0032FF 100%);
+}
+
+.driver-card.stroll-bg,
+.driver-card.alonso-bg {
+    background: linear-gradient(160deg, #00352F 0%, #006F62 80%);
+}
+
+.driver-card.ocon-bg,
+.driver-card.bearman-bg {
+    background: linear-gradient(160deg, #1A1A1A 0%, #B80000 80%);
+}
+
+.driver-card.hulkenberg-bg,
+.driver-card.bortoletto-bg {
+    background: linear-gradient(160deg, #0B0B0B 0%, #00FF4C 80%);
+}
+
+.driver-card.gasly-bg,
+.driver-card.colapinto-bg {
+    background: linear-gradient(160deg, #0B1C2D 0%, #0090FF 80%);
+}
+
+
+
+
+

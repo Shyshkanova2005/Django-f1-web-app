@@ -1,0 +1,353 @@
+.driver-hero {
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 40px 0;
+}
+
+.bg-number-f1 {
+    position: absolute;
+    right: 25%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 32rem;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.2); 
+    line-height: 1;
+    z-index: 1;
+    user-select: none;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.driver-info-content {
+    position: relative;
+    z-index: 4;
+}
+
+.driver-first-name {
+    font-size: 2rem;
+    font-weight: 300;
+    display: block;
+    text-transform: none;
+    margin-bottom: -10px;
+}
+
+.driver-name-title {
+    font-size: 5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.9;
+    margin-bottom: 20px;
+}
+
+.driver-meta-data {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+.meta-line {
+    width: 1px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.driver-cutout-wrapper {
+    position: absolute;
+    right: 35%;
+    bottom: 0;
+    z-index: 3;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.driver-cutout {
+    height: 95%; 
+    object-fit: contain;
+    filter: drop-shadow(-20px 0 30px rgba(0,0,0,0.5));
+}
+
+
+.bio-section {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.bio-title {
+    border-left: 5px solid #e10600;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+.driver-bio-img-custom {
+    width: 100%; 
+    max-width: 360px; 
+    height: auto;
+    border-radius: 0 !important; 
+    object-fit: cover;
+    display: block;
+}
+
+.card {
+    border-radius: 0 !important;
+}
+
+.driver-hero.hamilton-bg,
+.driver-hero.leclerc-bg {
+    background: linear-gradient(90deg, #000000 0%, #a6051a 100%);
+}
+
+.driver-hero.russell-bg,
+.driver-hero.antonelli-bg {
+  background: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 50%), radial-gradient(circle at 80% 50%, #00c2ba 0%, #00a19b 100%);
+}
+
+.driver-hero.verstappen-bg,
+.driver-hero.tsunoda-bg {
+    background: linear-gradient(90deg, #061022 0%, #0b1a36 40%, #cc0000 85%,  #fcd700 100% );
+}
+
+.driver-hero.norris-bg,
+.driver-hero.piastri-bg {
+   background: linear-gradient(160deg, #D86A00 0%, #E6A66A 80%);
+}
+
+.driver-hero.stroll-bg,
+.driver-hero.alonso-bg {
+    background: linear-gradient(160deg, #00352F 0%, #006F62 80%);
+}
+
+.driver-hero.ocon-bg,
+.driver-hero.bearman-bg {
+    background: linear-gradient(160deg, #1A1A1A 0%, #B80000 80%);
+}
+
+.driver-hero.albon-bg,
+.driver-hero.sainz-bg {
+    background: linear-gradient(160deg, #37B2E5 0%, #005BAC 80%);
+}
+
+.driver-hero.gasly-bg,
+.driver-hero.colapinto-bg {
+    background: linear-gradient(160deg, #0B1C2D 0%, #0090FF 80%);
+}
+
+.driver-hero.hulkenberg-bg,
+.driver-hero.bortoletto-bg {
+    background: linear-gradient(160deg, #0B0B0B 0%, #00FF4C 80%);
+}
+
+.driver-hero.lawson-bg,
+.driver-hero.hadjar-bg {
+   background: linear-gradient(135deg, #6692FF 0%, #0032FF 100%);
+}
+
+.circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 180px;
+    max-height: 180px;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 1.5;
+}
+
+.circle {
+    fill: none;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke: #004ea1;  
+    transition: stroke-dasharray 0.3s ease;
+}
+
+.percentage {
+    fill: #004ea1;
+    font-family: sans-serif;
+    font-size: 8px;
+    font-weight: 900;
+    text-anchor: middle;
+}
+
+.total {
+    font-size: 4px;
+    fill: #999;
+}
+
+.stat-label {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+.stat-card {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px 10px;
+    text-align: center;
+    height: 100%;
+    border-top: 3px solid; 
+}
+
+.stat-icon {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.stat-value {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #001c3d;
+    line-height: 1;
+}
+
+.stat-name {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #666;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.circle.hamilton-bg,
+.circle.leclerc-bg{
+   stroke: #a6051a !important;
+}
+
+.percentage.hamilton-bg,
+.percentage.leclerc-bg{
+   fill: #a6051a !important;
+}
+
+.circle.piastri-bg,
+.circle.norris-bg{
+   stroke:  #FF8000 !important;
+}
+
+.percentage.piastri-bg,
+.percentage.norris-bg{
+   fill:  #FF8000 !important;
+}
+
+.circle.russell-bg,
+.circle.antonelli-bg{
+   stroke: #38D5BE !important;
+}
+
+.percentage.russell-bg,
+.percentage.antonelli-bg{
+   fill: #38D5BE !important;
+}
+
+.circle.stroll-bg,
+.circle.alonso-bg{
+   stroke: #006f62  !important;
+}
+
+.percentage.stroll-bg,
+.percentage.alonso-bg{
+   fill: #006f62 !important;
+}
+
+.circle.ocon-bg,
+.circle.bearman-bg{
+   stroke: #a6051a !important;
+}
+
+.percentage.ocon-bg,
+.percentage.bearman-bg{
+   fill: #a6051a !important;
+}
+
+.circle.hulkenberg-bg,
+.circle.bortoleto-bg{
+   stroke: #05DF72 !important;
+}
+
+.percentage.hulkenberg-bg,
+.percentage.bortoleto-bg{
+   fill: #05DF72 !important;
+}
+
+.circle.lawson-bg,
+.circle.hadjar-bg{
+   stroke: #155DFC !important;
+}
+
+.percentage.lawson-bg,
+.percentage.hadjar-bg{
+   fill: #155DFC !important;
+}
+
+.circle.albon-bg,
+.circle.sainz-bg{
+   stroke: #34A6F4 !important;
+}
+
+.percentage.albon-bg,
+.percentage.sainz-bg{
+   fill: #34A6F4 !important;
+}
+
+.stat-card.albon-bg,
+.stat-card.sainz-bg{
+    border-top: 3px solid  #34A6F4 !important;
+}
+
+.stat-card.piastri-bg,
+.stat-card.norris-bg{
+    border-top: 3px solid #FF8000 !important;
+}
+
+.stat-card.hamilton-bg,
+.stat-card.leclerc-bg{
+    border-top: 3px solid #a6051a !important;
+}
+
+.stat-card.russell-bg,
+.stat-card.antonelli-bg{
+    border-top: 3px solid  #38D5BE !important;
+}
+
+.stat-card.verstappen-bg,
+.stat-card.tsunoda-bg{
+    border-top: 3px solid  #004ea1 !important;
+}
+
+.stat-card.stroll-bg,
+.stat-card.alonso-bg{
+    border-top: 3px solid #006f62  !important;
+}
+
+.stat-card.ocon-bg,
+.stat-card.bearman-bg{
+    border-top: 3px solid #a6051a !important;
+}
+
+.stat-card.hulkenberg-bg,
+.stat-card.bortoleto-bg{
+    border-top: 3px solid #05DF72 !important;
+}
+
+.stat-card.lawson-bg,
+.stat-card.hadjar-bg{
+    border-top: 3px solid #155DFC !important;
+}
+
+.stat-card.gasly-bg,
+.stat-card.colapinto-bg{
+    border-top: 3px solid #004ea1 !important;
+}

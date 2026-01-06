@@ -1,0 +1,442 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Main{% endblock %}
+
+{% block content %}
+<main class="pt-0">
+<section class="bolide-section mb-5">
+    <div class="f1-bg-text-giant">RACING</div>
+
+    <div class="container position-relative z-3 hero-content">
+        <div class="row pt-5">
+            <div class="col-12 text-center text-lg-start">
+                <h1 class="f1-hero-title">
+                    FORMULA 1 TEAMS<br>
+                    <span>2025</span> SEASON
+                </h1>
+                <p class="f1-hero-subtitle text-uppercase mt-2">Explore the grid, drivers, and team standings</p>
+            </div>
+        </div>
+
+        <div class="row align-items-end mt-4">
+            <div class="col-6">
+                <div class="car-container left-car">
+                    <img src="{% static 'main/photo/bolide_left.png' %}" class="img-fluid animate-car-left" alt="Green F1 Car">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="car-container right-car">
+                    <img src="{% static 'main/photo/bolide_right.png' %}" class="img-fluid animate-car-right" alt="Purple F1 Car">
+                </div>
+            </div>
+        </div>
+        
+        <div class="f1-photo-divider"></div>
+    </div>
+</section>
+
+    <div class="container">
+        <div class="drivers-header-wrapper d-flex align-items-center justify-content-between mb-3">
+            <h2 style="font-weight: 800;">SCHEDULE</h2>
+            <div class="d-flex">
+            <button class="btn btn-outline-secondary me-2" onclick="scrollCalendar(-1)">&#10094;</button>
+            <button class="btn btn-outline-secondary me-2" onclick="scrollCalendar(1)">&#10095;</button>
+        </div>
+        </div>
+    
+    <div class="calendar-slider" id="calendarSlider">
+
+        {% for race in races %}
+        <div class="result-card race-card">
+            <div class="card-header">
+                <div>
+                    <p class="card-type">ROUND {{ race.round_number }}</p>
+                    <h3 class="card-title">
+                      <img src="{{ race.image.url }}" alt="{{ race.name }}" class="race-flag">
+                        <h3 class="card-title">{{ race.name }}</h3>
+                    </h3>
+                    <p class="card-subtitle">{{ race.full_name }}</p>
+                </div>
+                <div class="card-date-compact">
+                    <span class="date-icon">&#128197;</span>
+                    {{ race.date_start|date:"j" }} – {{ race.date_end|date:"j F" }}
+                </div>
+                <span class="status-label">
+                    {% if race.status == 'completed' %}Completed{% endif %}
+                    {% if race.status == 'next' %}Next race{% endif %}
+                    {% if race.status == 'upcoming' %}Upcoming{% endif %}
+            </span>
+            </div>
+            
+        </div>
+        {% endfor %}
+
+    </div>
+        <div class="drivers-header-wrapper d-flex align-items-center justify-content-between mb-3 mt-3">
+            <h2>DRIVERS</h2>
+            <div class="d-flex">
+                <button id="btnPrev" class="btn btn-outline-secondary me-2">&#10094;</button>
+                <button id="btnNext" class="btn btn-outline-secondary">&#10095;</button>
+            </div>
+        </div>
+
+       <div class="drivers-slider" id="slider">
+        <a href="{% url 'driver_detail' driver_slug='verstappen' %}" class="text-decoration-none d-block">
+        <div class="drivers-track">
+             <div class="driver-card verstappen-bg">
+                <img src="{% static 'main/photo/2025redbullracingmaxver01right.avif' %}">
+               <div class="driver-name"><h3>Max<br>Verstappen</h3></div>
+          </div>    
+        </a>
+        
+        <a href="{% url 'driver_detail' driver_slug='tsunoda' %}" class="text-decoration-none d-block">
+          <div class="driver-card tsunoda-bg">
+                <img src="{% static 'main/photo/2025redbullracingyuktsu01right.avif' %}">
+               <div class="driver-name"><h3>Yuki<br>Tsunoda</h3></div>
+          </div>
+        </a>
+
+        <a href="{% url 'driver_detail' driver_slug='piastri' %}" class="text-decoration-none d-block">
+         <div class="driver-card piastri-bg">
+            <img src="{% static 'main/photo/2025mclarenoscpia01right.avif' %}">
+               <div class="driver-name"><h3>Oscar<br>Piastri</h3></div>
+          </div>   
+        </a>
+           
+        <a href="{% url 'driver_detail' driver_slug='norris' %}" class="text-decoration-none d-block">
+         <div class="driver-card norris-bg">
+            <img src="{% static 'main/photo/2025mclarenlannor01right.avif' %}">
+               <div class="driver-name"><h3>Lando<br>Norris</h3></div>
+          </div>   
+        </a>
+          
+        <a href="{% url 'driver_detail' driver_slug='russell' %}" class="text-decoration-none d-block">
+         <div class="driver-card russell-bg">
+            <img src=" {% static 'main/photo/2025mercedesgeorus01right.avif' %}">
+              <div class="driver-name"><h3>George<br>Russell</h3></div> 
+          </div>   
+        </a>
+          
+        <a href="{% url 'driver_detail' driver_slug='antonelli' %}" class="text-decoration-none d-block">
+         <div class="driver-card antonelli-bg">
+            <img src=" {% static 'main/photo/2025mercedesandant01right.avif'%}">
+               <div class="driver-name"><h3>Kimi<br>Antonelli</h3></div>
+          </div>   
+        </a>
+          
+        <a href="{% url 'driver_detail' driver_slug='leclerc' %}" class="text-decoration-none d-block">
+         <div class="driver-card leclerc-bg">
+            <img src=" {% static 'main/photo/2025ferrarichalec01right.avif'%}">
+               <div class="driver-name"><h3>Charles<br>Leclerc</h3></div>
+          </div>   
+        </a>
+          
+        <a href="{% url 'driver_detail' driver_slug='hamilton' %}" class="text-decoration-none d-block">
+          <div class="driver-card hamilton-bg">
+            <img src=" {% static 'main/photo/2025ferrarilewham01right.avif'%}">
+               <div class="driver-name"><h3>Lewis<br>Hamilton</h3></div>
+          </div>  
+        </a>
+          
+        <a href="{% url 'driver_detail' driver_slug='albon' %}" class="text-decoration-none d-block">
+          <div class="driver-card albon-bg">
+            <img src=" {% static 'main/photo/2025williamsalealb01right.avif'%}">
+               <div class="driver-name"><h3>Alex<br>Albon</h3></div>
+          </div>  
+        </a>
+          
+        <a href="{% url 'driver_detail' driver_slug='sainz' %}" class="text-decoration-none d-block">
+         <div class="driver-card sainz-bg">
+            <img src=" {% static 'main/photo/2025williamscarsai01right.avif'%}">
+               <div class="driver-name"><h3>Carlos<br>Sainz</h3></div>
+          </div>   
+        </a> 
+          
+        <a href="{% url 'driver_detail' driver_slug='lawson' %}" class="text-decoration-none d-block">
+         <div class="driver-card lawson-bg">
+            <img src=" {% static 'main/photo/2025racingbullslialaw01right.avif'%}">
+               <div class="driver-name"><h3>Liam<br>Lawson</h3></div>
+          </div>   
+        </a>  
+          
+        <a href="{% url 'driver_detail' driver_slug='hadjar' %}" class="text-decoration-none d-block">
+          <div class="driver-card hadjar-bg">
+            <img src=" {% static 'main/photo/2025racingbullsisahad01right.avif'%}">
+               <div class="driver-name"><h3>Isack<br>Hadjar</h3></div>
+          </div>  
+        </a> 
+          
+        <a href="{% url 'driver_detail' driver_slug='stroll' %}" class="text-decoration-none d-block">
+          <div class="driver-card stroll-bg">
+            <img src=" {% static 'main/photo/2025astonmartinlanstr01right.avif'%}">
+               <div class="driver-name"><h3>Lance<br>Stroll</h3></div>
+          </div>  
+        </a> 
+          
+        <a href="{% url 'driver_detail' driver_slug='alonso' %}" class="text-decoration-none d-block">
+          <div class="driver-card alonso-bg">
+            <img src=" {% static 'main/photo/2025astonmartinferalo01right.avif'%}">
+               <div class="driver-name"><h3>Fernando<br>Alonso</h3></div>
+          </div>  
+        </a>
+          
+        <a href="{% url 'driver_detail' driver_slug='ocon' %}" class="text-decoration-none d-block">
+           <div class="driver-card ocon-bg">
+            <img src=" {% static 'main/photo/2025haasestoco01right.avif'%}">
+               <div class="driver-name"><h3>Esteban<br>Ocon</h3></div>
+          </div> 
+        </a>
+          
+        <a href="{% url 'driver_detail' driver_slug='bearman' %}" class="text-decoration-none d-block">
+          <div class="driver-card bearman-bg">
+            <img src=" {% static 'main/photo/2025haasolibea01right.avif'%}">
+               <div class="driver-name"><h3>Oliver<br>Bearman</h3></div>
+          </div>  
+        </a>
+        
+        <a href="{% url 'driver_detail' driver_slug='hulkenberg' %}" class="text-decoration-none d-block">
+         <div class="driver-card hulkenberg-bg">
+            <img src=" {% static 'main/photo/2025kicksaubernichul01right.avif'%}">
+               <div class="driver-name"><h3>Nico<br>Hulkenberg</h3></div>
+          </div>   
+        </a>
+          
+        <a href="{% url 'driver_detail' driver_slug='bortoletto' %}" class="text-decoration-none d-block">
+          <div class="driver-card bortoletto-bg">
+            <img src=" {% static 'main/photo/2025kicksaubergabbor01right.avif'%}">
+               <div class="driver-name"><h3>Gabriel<br>Bortoleto</h3></div>
+          </div>  
+        </a>
+          
+        <a href="{% url 'driver_detail' driver_slug='gasly' %}" class="text-decoration-none d-block">
+          <div class="driver-card gasly-bg">
+            <img src=" {% static 'main/photo/2025alpinepiegas01right.avif'%}">
+            <div class="driver-name"><h3>Pierre<br>Gasly</h3></div>
+        </div>  
+        </a>
+          
+        <a href="{% url 'driver_detail' driver_slug='colapinto' %}" class="text-decoration-none d-block">
+            <div class="driver-card colapinto-bg">
+            <img src=" {% static 'main/photo/2025alpinefracol01right.avif'%}">
+               <div class="driver-name"><h3>Franco<br>Colapinto</h3></div>
+            </div>
+            </div>
+        </a>
+        </div>
+
+        <div class="row mb-3 mt-3">
+            <div class="col">
+                <h3 style="font-weight: 800;">TOP OF SEASON 2025</h3>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+           <div class="col">
+             <a href="{% url 'driver_detail' driver_slug='verstappen' %}" class="text-decoration-none d-block">
+               <div class="rating-card max-card redbull-bg">
+                <img src=" {% static 'main/photo/max2.avif'%}" >
+                <div class="card-img-overlay">
+                    <div class="driver-pos">2<sup>ND</sup></div>
+                    <div class="driver-info">
+                        <h5 class="card-title">Max Verstappen</h5>
+                        <p class="card-text">Red Bull Racing</p>
+                       <div class="driver-flag netherlands-flag"></div>
+                    </div>
+                    <div class="driver-pts">
+                        <p>396 <span class="pts-label">PTS</span></p>
+                    </div>
+                </div>  
+             </a>
+            </div>
+        </div>
+        
+        <div class="col">
+            <a href="{% url 'driver_detail' driver_slug='norris' %}" class="text-decoration-none d-block">
+             <div class="rating-card lando-card mclaren-bg">
+                <img src="{% static 'main/photo/2025mclarenlannor01right.avif' %}">
+                <div class="card-img-overlay">
+                    <div class="driver-pos">1<sup>ST</sup></div>
+                    <div class="driver-info">
+                        <h5 class="card-title">Lando Norris</h5>
+                        <p class="card-text">McLaren</p> 
+                        <div class="driver-flag united-kingdom-flag"></div>
+                    </div>
+                    <div class="driver-pts">
+                        <p>488 <span class="pts-label">PTS</span></p>
+                    </div>
+                </div>
+            </div>   
+            </a>
+        </div>
+        
+        <div class="col">
+            <a href="{% url 'driver_detail' driver_slug='piastri' %}" class="text-decoration-none d-block">
+            <div class="rating-card oscar-card mclaren-bg">
+                <img src="{% static 'main/photo/2025mclarenoscpia01right.avif' %}">
+                <div class="card-img-overlay">
+                    <div class="driver-pos">3<sup>RD</sup></div>
+                    <div class="driver-info">
+                        <h5 class="card-title">Oscar Piastri</h5>
+                        <p class="card-text">McLaren</p>
+                        <div class="driver-flag australia-flag"></div>
+                    </div>
+                    <div class="driver-pts">
+                        <p>392 <span class="pts-label">PTS</span></p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            
+        </div>
+    
+        <div class="table-switcher mb-4">
+            <button id="showDrivers" class="switch-btn btn btn-primary active">Driver Standings</button>
+        <button id="showTeams" class="switch-btn btn btn-secondary">Team Standings</button>
+        </div>
+    </div>
+
+<div id="driversTable" class="standings-container"> 
+    <h2 style="font-weight: 800;">DRIVER STANDINGS</h2>
+    <div class="table-wrapper">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>POS.</th>
+                    <th>DRIVER</th>
+                    <th>NATIONALITY</th>
+                    <th>TEAM</th>
+                    <th class="pts-col">PTS.</th> 
+                </tr>
+            </thead>
+            <tbody>
+            {% for d in drivers %}
+                 <tr class="drivers-row" {% if forloop.counter > 6 %}style="display:none"{% endif %}> 
+                    <td>{{ forloop.counter }}</td>
+                    <td class="driver-cell">
+                        {{ d.name }}
+                    </td>
+                    <td class="nationality-cell">
+                    {% if d.image %}
+                     <img src="{{ d.image.url }}" alt="{{ d.nationality }}" class="flag-icon" style="width:25px; height:25px; object-fit:cover;">
+                    {% else %}
+                    <span class="flag-placeholder"></span>
+                    {% endif %}
+                    {{ d.nationality }}
+                    </td>
+                    <td class="team-cell">
+                    <img src="{{ d.image_team.url }}" alt="{{ d.team }}" class="team-logo" style="width:30px; height:30px; object-fit:cover; border-radius:50%;">
+                    {{ d.team  }}
+                    </td>
+                    <td class="pts-col">{{ d.points }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+            
+        </table>
+   {% if teams|length > 6 %}
+        <div style="text-align: center; margin-top: 10px;">
+            <button id="viewAllDriversBtn" style="background:none; border:none; cursor:pointer; font-weight:600;">View All</button>
+        </div>
+        {% endif %}
+    </div>     
+</div>
+
+<div id="teamsTable" style="display:none;" class="standings-container"> 
+    <h2>Team Standings</h2>
+    <div class="table-wrapper">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>POS.</th>
+                    <th>TEAM</th>
+                    <th class="pts-col">PTS.</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for t in teams %}
+                    <td>{{ forloop.counter }}</td>
+                    <td>
+                    <img src="{{ t.image.url }}" alt="{{ t.team_namee }}" class="team-logo" style="width:35px; height:35px; object-fit:cover; border-radius:50%;">
+                    {{ t.team_name }}
+                </td>       
+                    <td class="pts-col">{{ t.points }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    
+</div>
+</div>
+</div>
+</main>
+<script>
+const slider = document.getElementById("slider");
+const btnPrev = document.getElementById("btnPrev");
+const btnNext = document.getElementById("btnNext");
+
+btnPrev?.addEventListener("click", () => {
+    slider.scrollBy({ left: -400, behavior: "smooth" });
+});
+
+btnNext?.addEventListener("click", () => {
+    slider.scrollBy({ left: 400, behavior: "smooth" });
+});
+
+const showDriversBtn = document.getElementById('showDrivers');
+const showTeamsBtn = document.getElementById('showTeams');
+const driversTable = document.getElementById('driversTable');
+const teamsTable = document.getElementById('teamsTable');
+
+showDriversBtn?.addEventListener('click', () => {
+    driversTable.style.display = 'block';
+    teamsTable.style.display = 'none';
+    showDriversBtn.classList.add('active');
+    showTeamsBtn.classList.remove('active');
+});
+
+showTeamsBtn?.addEventListener('click', () => {
+    driversTable.style.display = 'none';
+    teamsTable.style.display = 'block';
+    showDriversBtn.classList.remove('active');
+    showTeamsBtn.classList.add('active');
+});
+
+function scrollCalendar(direction) {
+    const slider = document.getElementById("calendarSlider");
+    if (!slider) return;
+
+    const card = slider.querySelector(".race-card");
+    if (!card) return;
+
+    const cardWidth = card.offsetWidth + 25;
+    slider.scrollBy({
+        left: direction * cardWidth,
+        behavior: "smooth"
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const viewBtn = document.getElementById("viewAllDriversBtn");
+    if (!viewBtn) return;
+
+    const rows = Array.from(document.querySelectorAll(".drivers-row")).slice(5);
+    let expanded = false; 
+
+
+    rows.forEach(row => row.style.display = "none");
+
+    viewBtn.addEventListener("click", () => {
+        expanded = !expanded;
+
+        rows.forEach(row => {
+            row.style.display = expanded ? "table-row" : "none";
+        });
+
+        viewBtn.textContent = expanded ? "View Less" : "View All";
+    });
+});
+
+</script>
+{% endblock %}

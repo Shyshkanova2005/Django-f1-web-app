@@ -1,0 +1,142 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block header_margin %}mb-0{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'main/about_drivers.css' %}">
+{% endblock %}
+
+{% block content %}
+<main>
+    <section class="driver-hero {{ driver.color_class }}">
+        <div class="bg-number-f1">{{ driver.driver_number }}</div>
+        <div class="container driver-info-content">
+            <div class="row">
+                <div class="col-lg-6">
+                    <span class="driver-first-name">{{ driver.name.split.0 }}</span>
+                    <h1 class="driver-name-title">
+                        {% with driver.name.split|last as last_name %}
+                            {{ last_name }}
+                        {% endwith %}
+                    </h1>
+
+                    <div class="driver-meta-data">
+                        <span>{{ driver.nationality }}</span>
+                        <div class="meta-line"></div>
+                        <span>{{ driver.team.name }}</span>
+                        <div class="meta-line"></div>
+                        <span class="fw-bold">{{ driver.driver_number }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="driver-cutout-wrapper">
+            {% if driver.driver_image %}
+                <img src="{{ driver.driver_image.url }}" class="driver-cutout" alt="{{ driver.name }}">
+            {% else %}
+                <img src="{{ driver.image.url }}" class="driver-cutout" alt="{{ driver.name }}">
+            {% endif %}
+        </div>
+    </section>
+
+    <section class="stats-section py-5 bg-light">
+    <div class="container">
+        <h2 class="bio-title text-uppercase">Career highlights</h2>
+        <div class="row text-center mb-5">
+            {% for key, stat in stats.items %}
+            <div class="col-6 col-md-3">
+                <div class="stat-circle" data-value="{{ stat.current }}" data-total="{{ stat.max }}" >
+                    <svg viewBox="0 0 36 36" class="circular-chart {{ stat.color }}">
+                        <path class="circle-bg {{ driver.color_class }}" d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <path class="circle {{ driver.color_class }}" stroke-dasharray="{{ stat.percent }}, 100"
+                            d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <text x="18" y="20.35" class="percentage {{ driver.color_class }}">
+                            {{ stat.current }}<tspan class="total">/{{ stat.max }}</tspan>
+                        </text>
+                    </svg>
+                </div>
+                <h5 class="stat-label">{{ stat.label }}</h5>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+   <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
+    <div class="stat-card shadow-sm text-center flex-grow-1 {{ driver.color_class }}" style="min-width: 150px; max-width: 180px;">
+      <span class="stat-icon">🏎️</span>
+      <div class="stat-value">{{ career.starts }}</div>
+      <div class="stat-name">Starts</div>
+    </div>
+
+    <div class="stat-card shadow-sm text-center flex-grow-1 {{ driver.color_class }}" style="min-width: 150px; max-width: 180px;">
+      <span class="stat-icon">⏱️</span>
+      <div class="stat-value">{{ career.fastest_laps }}</div>
+      <div class="stat-name">Fastest Laps</div>
+    </div>
+
+    <div class="stat-card shadow-sm text-center flex-grow-1 {{ driver.color_class }}" style="min-width: 150px; max-width: 180px;">
+    <span class="stat-icon">🏴</span>
+      <div class="stat-value">{{ career.best_finish }}</div>
+      <div class="stat-name">Best Finish</div>
+    </div>
+
+    <div class="stat-card shadow-sm text-center flex-grow-1 {{ driver.color_class }}" style="min-width: 150px; max-width: 180px;">
+    <span class="stat-icon">🏁</span>
+      <div class="stat-value">{{ career.best_grid }}</div>
+      <div class="stat-name">Best Grid</div>
+    </div>
+
+    <div class="stat-card shadow-sm text-center flex-grow-1 {{ driver.color_class }}" style="min-width: 150px; max-width: 180px;">
+      <span class="stat-icon">➕</span>
+      <div class="stat-value">{{ career.points }}</div>
+      <div class="stat-name">Points</div>
+    </div>
+
+     <div class="stat-card shadow-sm text-center flex-grow-1 {{ driver.color_class }}" style="min-width: 150px; max-width: 180px;">
+    <span class="stat-icon">🚫</span>
+      <div class="stat-value">{{ career.retirements }}</div>
+      <div class="stat-name">Retirements</div>
+    </div>
+  </div>
+</div>
+</section>
+
+    <section class="bio-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="bio-title text-uppercase">Biography</h2>
+                   <div class="row align-items-start">
+                    <div class="col-md-7">
+                        <div class="driver-description lead">
+                            {{ driver.description|linebreaks }}
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-5 d-flex justify-content-center">
+                        <img src="{{ driver.image.url }}" class="driver-bio-img-custom shadow-sm" alt="{{ driver.name }}">
+                    </div>
+                </div>
+            </div>
+                
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm p-4 rounded-4 bg-light">
+                        <h5 class="fw-bold mb-3">Profile</h5>
+                        <p class="mb-1 text-muted small">Place of Birth</p>
+                        <p class="fw-bold">{{ driver.place_of_birth }}</p>
+                        
+                        <p class="mb-1 text-muted small">Date of Birth</p>
+                        <p class="fw-bold">{{ driver.birthday|date:"d/m/Y" }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock content %}

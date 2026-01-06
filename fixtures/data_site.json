@@ -1,0 +1,2134 @@
+[
+{
+  "model": "main.team",
+  "pk": 1,
+  "fields": {
+    "team_name": "McLaren",
+    "image": "tracks/mclaren.webp",
+    "points": 800
+  }
+},
+{
+  "model": "main.team",
+  "pk": 2,
+  "fields": {
+    "team_name": "Mercedes",
+    "image": "tracks/mercedes_yGNbegg.webp",
+    "points": 459
+  }
+},
+{
+  "model": "main.team",
+  "pk": 3,
+  "fields": {
+    "team_name": "Red Bull Racing",
+    "image": "tracks/red-bull_JN5Uf8h.png",
+    "points": 426
+  }
+},
+{
+  "model": "main.team",
+  "pk": 4,
+  "fields": {
+    "team_name": "Ferrari",
+    "image": "tracks/Ferrari-Scuderia-Logo_ztBbDIp.png",
+    "points": 382
+  }
+},
+{
+  "model": "main.team",
+  "pk": 5,
+  "fields": {
+    "team_name": "Williams",
+    "image": "tracks/williams_ikwzYNx.png",
+    "points": 137
+  }
+},
+{
+  "model": "main.team",
+  "pk": 6,
+  "fields": {
+    "team_name": "Racing Bulls",
+    "image": "tracks/red-bull_73emoNS.png",
+    "points": 92
+  }
+},
+{
+  "model": "main.team",
+  "pk": 7,
+  "fields": {
+    "team_name": "Aston Martin",
+    "image": "tracks/astonmartin_QDMiyFA.webp",
+    "points": 80
+  }
+},
+{
+  "model": "main.team",
+  "pk": 8,
+  "fields": {
+    "team_name": "Haas F1 Team",
+    "image": "tracks/5bfb4adeec547_wGndwkf.jpg",
+    "points": 73
+  }
+},
+{
+  "model": "main.team",
+  "pk": 9,
+  "fields": {
+    "team_name": "Kick Sauber",
+    "image": "tracks/Stake_F1_Team_Kick_Sauber_logo.webp",
+    "points": 68
+  }
+},
+{
+  "model": "main.team",
+  "pk": 10,
+  "fields": {
+    "team_name": "Alpine",
+    "image": "tracks/images_U0OiZhx.png",
+    "points": 22
+  }
+},
+{
+  "model": "main.driver",
+  "pk": 1,
+  "fields": {
+    "name": "Lando Norris",
+    "image": "tracks/united-kingdom.png",
+    "nationality": "United Kingdom",
+    "team": "McLaren",
+    "image_team": "tracks/mclaren_qfJNoYG.webp",
+    "points": 423
+  }
+},
+{
+  "model": "main.driver",
+  "pk": 2,
+  "fields": {
+    "name": "Max Verstappen",
+    "image": "tracks/netherlands_lw63KLD.png",
+    "nationality": "Netherlands",
+    "team": "Red Bull Racing",
+    "image_team": "tracks/red-bull_oDTZ0qj.png",
+    "points": 421
+  }
+},
+{
+  "model": "main.driver",
+  "pk": 3,
+  "fields": {
+    "name": "Oscar Piastri",
+    "image": "tracks/australia_iLMSGeM.png",
+    "nationality": "Australia",
+    "team": "McLaren",
+    "image_team": "tracks/mclaren_Cx9Wsgv.webp",
+    "points": 410
+  }
+},
+{
+  "model": "main.driver",
+  "pk": 4,
+  "fields": {
+    "name": "George Russell",
+    "image": "tracks/united-kingdom_5ETwxF4.png",
+    "nationality": "United Kingdom",
+    "team": "Mercedes",
+    "image_team": "tracks/mercedes_KdQ8sSP.webp",
+    "points": 319
+  }
+},
+{
+  "model": "main.driver",
+  "pk": 5,
+  "fields": {
+    "name": "Charles Leclerc",
+    "image": "tracks/monaco_ocSaucv.png",
+    "nationality": "Monaco",
+    "team": "Ferrari",
+    "image_team": "tracks/Ferrari-Scuderia-Logo.png",
+    "points": 242
+  }
+},
+{
+  "model": "main.driver",
+  "pk": 6,
+  "fields": {
+    "name": "Lewis Hamilton",
+    "image": "tracks/united-kingdom_20RVF3c.png",
+    "nationality": "United Kingdom",
+    "team": "Ferrari",
+    "image_team": "tracks/Ferrari-Scuderia-Logo_qQWc6oa.png",
+    "points": 156
+  }
+},
+{
+  "model": "main.driver",
+  "pk": 7,
+  "fields": {
+    "name": "Kimi Antonelli",
+    "image": "tracks/italy_PdtNDbW.png",
+    "nationality": "Antonelli",
+    "team": "Mercedes",
+    "image_team": "tracks/mercedes_pxMRYX6.webp",
+    "points": 150
+  }
+},
+{
+  "model": "main.driver",
+  "pk": 8,
+  "fields": {
+    "name": "Alex Albon",
+    "image": "tracks/world.png",
+    "nationality": "Thailand",
+    "team": "Williams",
+    "image_team": "tracks/williams_TxWvJ0b.png",
+    "points": 73
+  }
+},
+{
+  "model": "main.driver",
+  "pk": 9,
+  "fields": {
+    "name": "Carlos Sainz",
+    "image": "tracks/spain_fuNdg7T.png",
+    "nationality": "Spain",
+    "team": "Williams",
+    "image_team": "tracks/williams_mMGxjzk.png",
+    "points": 64
+  }
+},
+{
+  "model": "main.driver",
+  "pk": 10,
+  "fields": {
+    "name": "Isack Hadjar",
+    "image": "tracks/france.png",
+    "nationality": "France",
+    "team": "Racing Bulls",
+    "image_team": "tracks/red-bull_9C9cIhS.png",
+    "points": 51
+  }
+},
+{
+  "model": "main.driver",
+  "pk": 11,
+  "fields": {
+    "name": "Fernando Alonso",
+    "image": "tracks/spain_9tGD0dI.png",
+    "nationality": "Spain",
+    "team": "Aston Martin",
+    "image_team": "tracks/astonmartin.webp",
+    "points": 56
+  }
+},
+{
+  "model": "main.driver",
+  "pk": 12,
+  "fields": {
+    "name": "Nico Hülkenberg",
+    "image": "tracks/german.png",
+    "nationality": "German",
+    "team": "Kick Sauber",
+    "image_team": "tracks/Stake_F1_Team_Kick_Sauber_logo_RAAGLqq.webp",
+    "points": 51
+  }
+},
+{
+  "model": "main.driver",
+  "pk": 13,
+  "fields": {
+    "name": "Oliver Bearman",
+    "image": "tracks/united-kingdom_iKmynUi.png",
+    "nationality": "United Kingdom",
+    "team": "Haas F1 Team",
+    "image_team": "tracks/5bfb4adeec547.jpg",
+    "points": 41
+  }
+},
+{
+  "model": "main.driver",
+  "pk": 14,
+  "fields": {
+    "name": "Esteban Ocon",
+    "image": "tracks/france_eZ4WwNs.png",
+    "nationality": "France",
+    "team": "Haas F1 Team",
+    "image_team": "tracks/5bfb4adeec547_Z5SnXJk.jpg",
+    "points": 38
+  }
+},
+{
+  "model": "main.driver",
+  "pk": 15,
+  "fields": {
+    "name": "Pierre Gasly",
+    "image": "tracks/france_3ijajSS.png",
+    "nationality": "France",
+    "team": "Alpine",
+    "image_team": "tracks/images_tGP414N.png",
+    "points": 22
+  }
+},
+{
+  "model": "main.race",
+  "pk": 1,
+  "fields": {
+    "name": "Australia",
+    "date_start": "2025-03-14",
+    "date_end": "2025-03-16",
+    "image": "tracks/australia_ygwhQm9.png",
+    "round_number": 1,
+    "status": "completed"
+  }
+},
+{
+  "model": "main.race",
+  "pk": 2,
+  "fields": {
+    "name": "China",
+    "date_start": "2025-05-21",
+    "date_end": "2025-05-23",
+    "image": "tracks/china.png",
+    "round_number": 2,
+    "status": "completed"
+  }
+},
+{
+  "model": "main.race",
+  "pk": 3,
+  "fields": {
+    "name": "Japan",
+    "date_start": "2025-04-04",
+    "date_end": "2025-04-06",
+    "image": "tracks/japan.png",
+    "round_number": 3,
+    "status": "completed"
+  }
+},
+{
+  "model": "main.race",
+  "pk": 4,
+  "fields": {
+    "name": "Bahrain",
+    "date_start": "2025-04-11",
+    "date_end": "2025-04-13",
+    "image": "tracks/bahrain.png",
+    "round_number": 4,
+    "status": "completed"
+  }
+},
+{
+  "model": "main.race",
+  "pk": 5,
+  "fields": {
+    "name": "Saudi Arabia",
+    "date_start": "2025-04-18",
+    "date_end": "2025-04-20",
+    "image": "tracks/flag.png",
+    "round_number": 5,
+    "status": "completed"
+  }
+},
+{
+  "model": "main.race",
+  "pk": 6,
+  "fields": {
+    "name": "Miami",
+    "date_start": "2025-05-02",
+    "date_end": "2025-12-04",
+    "image": "tracks/usa.png",
+    "round_number": 6,
+    "status": "completed"
+  }
+},
+{
+  "model": "main.race",
+  "pk": 7,
+  "fields": {
+    "name": "Emilia-Romanga",
+    "date_start": "2025-08-16",
+    "date_end": "2025-05-18",
+    "image": "tracks/italy.png",
+    "round_number": 7,
+    "status": "completed"
+  }
+},
+{
+  "model": "main.race",
+  "pk": 8,
+  "fields": {
+    "name": "Monaco",
+    "date_start": "2025-05-23",
+    "date_end": "2025-05-25",
+    "image": "tracks/monaco.png",
+    "round_number": 8,
+    "status": "completed"
+  }
+},
+{
+  "model": "main.race",
+  "pk": 9,
+  "fields": {
+    "name": "Spain",
+    "date_start": "2025-05-30",
+    "date_end": "2025-06-01",
+    "image": "tracks/spain.png",
+    "round_number": 9,
+    "status": "completed"
+  }
+},
+{
+  "model": "main.race",
+  "pk": 10,
+  "fields": {
+    "name": "Canada",
+    "date_start": "2025-06-13",
+    "date_end": "2025-06-15",
+    "image": "tracks/canada.png",
+    "round_number": 10,
+    "status": "completed"
+  }
+},
+{
+  "model": "main.race",
+  "pk": 11,
+  "fields": {
+    "name": "Austria",
+    "date_start": "2025-06-27",
+    "date_end": "2025-06-29",
+    "image": "tracks/austria.png",
+    "round_number": 11,
+    "status": "completed"
+  }
+},
+{
+  "model": "main.race",
+  "pk": 12,
+  "fields": {
+    "name": "Great Britain",
+    "date_start": "2025-07-04",
+    "date_end": "2025-07-06",
+    "image": "tracks/australia.png",
+    "round_number": 12,
+    "status": "completed"
+  }
+},
+{
+  "model": "main.race",
+  "pk": 13,
+  "fields": {
+    "name": "Belgium",
+    "date_start": "2025-07-25",
+    "date_end": "2025-11-27",
+    "image": "tracks/belgium.png",
+    "round_number": 13,
+    "status": "completed"
+  }
+},
+{
+  "model": "main.race",
+  "pk": 14,
+  "fields": {
+    "name": "Hungary",
+    "date_start": "2025-08-01",
+    "date_end": "2025-08-03",
+    "image": "tracks/hungary.png",
+    "round_number": 14,
+    "status": "completed"
+  }
+},
+{
+  "model": "main.race",
+  "pk": 15,
+  "fields": {
+    "name": "Netherlands",
+    "date_start": "2025-09-29",
+    "date_end": "2025-08-31",
+    "image": "tracks/netherlands.png",
+    "round_number": 15,
+    "status": "completed"
+  }
+},
+{
+  "model": "main.race",
+  "pk": 16,
+  "fields": {
+    "name": "Italy",
+    "date_start": "2025-09-05",
+    "date_end": "2025-09-07",
+    "image": "tracks/italy_P2vIiQJ.png",
+    "round_number": 16,
+    "status": "completed"
+  }
+},
+{
+  "model": "main.race",
+  "pk": 17,
+  "fields": {
+    "name": "Azerbaijan",
+    "date_start": "2025-10-19",
+    "date_end": "2025-09-21",
+    "image": "tracks/azerbaijan.png",
+    "round_number": 17,
+    "status": "completed"
+  }
+},
+{
+  "model": "main.race",
+  "pk": 18,
+  "fields": {
+    "name": "Singapore",
+    "date_start": "2025-10-03",
+    "date_end": "2025-10-05",
+    "image": "tracks/flag_1.png",
+    "round_number": 18,
+    "status": "completed"
+  }
+},
+{
+  "model": "main.race",
+  "pk": 19,
+  "fields": {
+    "name": "United States",
+    "date_start": "2025-10-17",
+    "date_end": "2025-10-19",
+    "image": "tracks/usa_rD9ywUD.png",
+    "round_number": 19,
+    "status": "completed"
+  }
+},
+{
+  "model": "main.race",
+  "pk": 20,
+  "fields": {
+    "name": "Mexico",
+    "date_start": "2025-10-24",
+    "date_end": "2025-10-26",
+    "image": "tracks/mexico.png",
+    "round_number": 20,
+    "status": "completed"
+  }
+},
+{
+  "model": "main.race",
+  "pk": 21,
+  "fields": {
+    "name": "Brazil",
+    "date_start": "2025-11-07",
+    "date_end": "2025-11-09",
+    "image": "tracks/brazil-flag.png",
+    "round_number": 21,
+    "status": "completed"
+  }
+},
+{
+  "model": "main.race",
+  "pk": 22,
+  "fields": {
+    "name": "Las Vegas",
+    "date_start": "2025-11-20",
+    "date_end": "2025-11-22",
+    "image": "tracks/usa_qAwtkgi.png",
+    "round_number": 22,
+    "status": "completed"
+  }
+},
+{
+  "model": "main.race",
+  "pk": 23,
+  "fields": {
+    "name": "Qatar",
+    "date_start": "2025-11-28",
+    "date_end": "2025-11-30",
+    "image": "tracks/qatar.png",
+    "round_number": 23,
+    "status": "completed"
+  }
+},
+{
+  "model": "main.race",
+  "pk": 24,
+  "fields": {
+    "name": "Abu Dhabi",
+    "date_start": "2025-12-05",
+    "date_end": "2025-12-07",
+    "image": "tracks/united-arab-emirates.png",
+    "round_number": 24,
+    "status": "upcoming"
+  }
+},
+{
+  "model": "main.fastetlap",
+  "pk": 1,
+  "fields": {
+    "name": "Lando Norris",
+    "team": "McLaren",
+    "lap": 6,
+    "image": "tracks/mclaren.png"
+  }
+},
+{
+  "model": "main.fastetlap",
+  "pk": 2,
+  "fields": {
+    "name": "Oscar Piastri",
+    "team": "McLaren",
+    "lap": 6,
+    "image": "tracks/mclaren_cVBbOlp.png"
+  }
+},
+{
+  "model": "main.fastetlap",
+  "pk": 3,
+  "fields": {
+    "name": "Kimi Antonelli",
+    "team": "Mercedes",
+    "lap": 3,
+    "image": "tracks/mercedes.webp"
+  }
+},
+{
+  "model": "main.fastetlap",
+  "pk": 4,
+  "fields": {
+    "name": "George Russell",
+    "team": "Mercedes",
+    "lap": 3,
+    "image": "tracks/mercedes_GPfd3xz.webp"
+  }
+},
+{
+  "model": "main.fastetlap",
+  "pk": 5,
+  "fields": {
+    "name": "Max Verstappen",
+    "team": "Red Bull",
+    "lap": 3,
+    "image": "tracks/red-bull.png"
+  }
+},
+{
+  "model": "main.fastetlap",
+  "pk": 6,
+  "fields": {
+    "name": "Lewis Hamilton",
+    "team": "Ferrari",
+    "lap": 1,
+    "image": "tracks/Ferrari-Scuderia-Logo_Q1aCbzG.png"
+  }
+},
+{
+  "model": "main.fastetlap",
+  "pk": 7,
+  "fields": {
+    "name": "Alexander Albon",
+    "team": "Williams",
+    "lap": 1,
+    "image": "tracks/williams.png"
+  }
+},
+{
+  "model": "main.fastetlap",
+  "pk": 8,
+  "fields": {
+    "name": "Charles Leclerc",
+    "team": "Ferrari",
+    "lap": 1,
+    "image": "tracks/Ferrari-Scuderia-Logo_SM9LqhR.png"
+  }
+},
+{
+  "model": "main.polepossition",
+  "pk": 1,
+  "fields": {
+    "name": "Max Verstappen",
+    "team": "Red Bull",
+    "pole": 8,
+    "image": "tracks/red-bull_kWVVYcR.png"
+  }
+},
+{
+  "model": "main.polepossition",
+  "pk": 2,
+  "fields": {
+    "name": "Lando Norris",
+    "team": "McLaren",
+    "pole": 7,
+    "image": "tracks/mclaren_Mwo049D.png"
+  }
+},
+{
+  "model": "main.polepossition",
+  "pk": 3,
+  "fields": {
+    "name": "Oscar Piastri",
+    "team": "McLaren",
+    "pole": 6,
+    "image": "tracks/mclaren_o9r7idR.png"
+  }
+},
+{
+  "model": "main.polepossition",
+  "pk": 4,
+  "fields": {
+    "name": "George Russell",
+    "team": "Mercedes",
+    "pole": 2,
+    "image": "tracks/mercedes_41JaOZV.webp"
+  }
+},
+{
+  "model": "main.polepossition",
+  "pk": 5,
+  "fields": {
+    "name": "Charles Leclerc",
+    "team": "Ferrari",
+    "pole": 1,
+    "image": "tracks/Ferrari-Scuderia-Logo_rB5sSwP.png"
+  }
+},
+{
+  "model": "main.podiums",
+  "pk": 1,
+  "fields": {
+    "name": "Lando Norris",
+    "team": "McLaren",
+    "podiums": 18
+  }
+},
+{
+  "model": "main.podiums",
+  "pk": 2,
+  "fields": {
+    "name": "Oscar Piastri",
+    "team": "McLaren",
+    "podiums": 16
+  }
+},
+{
+  "model": "main.podiums",
+  "pk": 3,
+  "fields": {
+    "name": "Max Verstappen",
+    "team": "Red Bull",
+    "podiums": 15
+  }
+},
+{
+  "model": "main.podiums",
+  "pk": 4,
+  "fields": {
+    "name": "George Russell",
+    "team": "Mercedes",
+    "podiums": 9
+  }
+},
+{
+  "model": "main.podiums",
+  "pk": 5,
+  "fields": {
+    "name": "Charles Leclerc",
+    "team": "Ferrari",
+    "podiums": 7
+  }
+},
+{
+  "model": "main.podiums",
+  "pk": 6,
+  "fields": {
+    "name": "Kimi Antonelli",
+    "team": "Mercedes",
+    "podiums": 3
+  }
+},
+{
+  "model": "main.podiums",
+  "pk": 7,
+  "fields": {
+    "name": "Carlos Sainz",
+    "team": "Williams",
+    "podiums": 2
+  }
+},
+{
+  "model": "main.podiums",
+  "pk": 8,
+  "fields": {
+    "name": "Nico Hulkenberg",
+    "team": "Sauber",
+    "podiums": 1
+  }
+},
+{
+  "model": "main.podiums",
+  "pk": 9,
+  "fields": {
+    "name": "Isack Hadjar",
+    "team": "Racing Bulls",
+    "podiums": 1
+  }
+},
+{
+  "model": "main.dnf",
+  "pk": 1,
+  "fields": {
+    "name": "Liam Lawson",
+    "team": "Red Bull",
+    "dnf": 5
+  }
+},
+{
+  "model": "main.dnf",
+  "pk": 2,
+  "fields": {
+    "name": "Fernando Alonso",
+    "team": "Aston Martin",
+    "dnf": 5
+  }
+},
+{
+  "model": "main.dnf",
+  "pk": 3,
+  "fields": {
+    "name": "Gabriel Bortoleto",
+    "team": "Sauber",
+    "dnf": 5
+  }
+},
+{
+  "model": "main.dnf",
+  "pk": 4,
+  "fields": {
+    "name": "Andrea Kimi Antonelli",
+    "team": "Mercedes",
+    "dnf": 4
+  }
+},
+{
+  "model": "main.dnf",
+  "pk": 5,
+  "fields": {
+    "name": "Carlos Sainz Jr.",
+    "team": "Williams",
+    "dnf": 4
+  }
+},
+{
+  "model": "main.dnf",
+  "pk": 6,
+  "fields": {
+    "name": "Alexander Albon",
+    "team": "Williams",
+    "dnf": 4
+  }
+},
+{
+  "model": "main.dnf",
+  "pk": 7,
+  "fields": {
+    "name": "Oliver Bearman",
+    "team": "Haas",
+    "dnf": 3
+  }
+},
+{
+  "model": "main.dnf",
+  "pk": 8,
+  "fields": {
+    "name": "Jack Doohan",
+    "team": "Alpine",
+    "dnf": 2
+  }
+},
+{
+  "model": "main.dnf",
+  "pk": 9,
+  "fields": {
+    "name": "Pierre Gasly",
+    "team": "Alpine",
+    "dnf": 2
+  }
+},
+{
+  "model": "main.dnf",
+  "pk": 10,
+  "fields": {
+    "name": "Lando Norris",
+    "team": "McLaren",
+    "dnf": 2
+  }
+},
+{
+  "model": "main.dnf",
+  "pk": 11,
+  "fields": {
+    "name": "Charles Leclerc",
+    "team": "Ferrari",
+    "dnf": 2
+  }
+},
+{
+  "model": "main.dnf",
+  "pk": 12,
+  "fields": {
+    "name": "Charles Leclerc",
+    "team": "Ferrari",
+    "dnf": 2
+  }
+},
+{
+  "model": "main.dnf",
+  "pk": 13,
+  "fields": {
+    "name": "Nico Hulkenberg",
+    "team": "Sauber",
+    "dnf": 2
+  }
+},
+{
+  "model": "main.dnf",
+  "pk": 14,
+  "fields": {
+    "name": "Lance Stroll",
+    "team": "Aston Martin",
+    "dnf": 2
+  }
+},
+{
+  "model": "main.dnf",
+  "pk": 15,
+  "fields": {
+    "name": "Isack Hadjar",
+    "team": "Racing Bulls",
+    "dnf": 2
+  }
+},
+{
+  "model": "main.dnf",
+  "pk": 16,
+  "fields": {
+    "name": "Yuki Tsunoda",
+    "team": "Red Bull",
+    "dnf": 1
+  }
+},
+{
+  "model": "main.dnf",
+  "pk": 17,
+  "fields": {
+    "name": "Esteban Ocon",
+    "team": "Haas",
+    "dnf": 1
+  }
+},
+{
+  "model": "main.dnf",
+  "pk": 18,
+  "fields": {
+    "name": "Max Verstappen",
+    "team": "Red Bull",
+    "dnf": 1
+  }
+},
+{
+  "model": "main.dnf",
+  "pk": 19,
+  "fields": {
+    "name": "Oscar Piastri",
+    "team": "McLaren",
+    "dnf": 1
+  }
+},
+{
+  "model": "main.aboutteams",
+  "pk": 2,
+  "fields": {
+    "name": "Mercedes",
+    "driver1_name": "George Russell",
+    "driver2_name": "Kimi Antonelli",
+    "driver1_number": 63,
+    "driver2_number": 12,
+    "slug": "mercedes",
+    "description": "Mercedes has been a leading Formula 1 team since the hybrid era began. Known for technological excellence and strong engineering, Mercedes has won multiple consecutive Constructors’ Championships. In 2025, they focused on improving race pace, reliability, and car balance to compete with Red Bull and Ferrari.\r\n\r\nGeorge Russell and Kimi Antonelli were the team’s drivers for 2025. Russell’s precision and adaptability complemented Antonelli’s youthful energy and aggressive style. This pairing allowed Mercedes to evaluate different driving techniques and improve car setup choices.\r\n\r\nThe team concentrated on hybrid engine efficiency and aerodynamic upgrades. Mercedes aimed to maximize performance on both high-speed and tight circuits, ensuring consistent points finishes across the season.\r\n\r\nMercedes also invested in strategic race planning. Pit stop timing, tire selection, and energy management were key elements of their strategy, allowing them to challenge for podiums even when their car was not the outright fastest.",
+    "logo": "teams/logos/mercedes_MaaAoHf.webp",
+    "car_image": "teams/cars/2025mercedescarright.avif",
+    "driver1_image": "teams/drivers/2025mercedesgeorus01right.avif",
+    "driver2_image": "teams/drivers/2025mercedesandant01right.avif",
+    "color_class": "mercedes-bg"
+  }
+},
+{
+  "model": "main.aboutteams",
+  "pk": 3,
+  "fields": {
+    "name": "Red Bull Racing",
+    "driver1_name": "Max Verstappen",
+    "driver2_name": "Yuki Tsunoda",
+    "driver1_number": 1,
+    "driver2_number": 22,
+    "slug": "redbull",
+    "description": "Red Bull Racing is known for its innovation, speed, and dominance in recent seasons. Founded in 2005, the team quickly became a top competitor thanks to advanced aerodynamics and strong engine partnerships. In 2025, the team’s main focus remained on maintaining championship-winning performance and optimizing race strategies.\r\n\r\nThe driver lineup consisted of Max Verstappen and Liam Lawson. Verstappen, a multiple-time World Champion, brought experience and unmatched racecraft, while Lawson added youthful energy and raw speed. This combination allowed Red Bull to balance risk and consistency during the season.\r\n\r\nRed Bull’s 2025 car featured advanced aerodynamics, making it one of the fastest machines on the grid. The engineering team continuously updated the car throughout the season, targeting circuits where downforce and tire management were crucial.\r\n\r\nThe team’s strategy department also played a key role in race results. Red Bull often executed daring pit-stop calls and tire choices, which allowed them to gain positions during critical stages of races. Their performance made them consistent title contenders throughout the season.",
+    "logo": "teams/logos/red-bull.png",
+    "car_image": "teams/cars/2025redbullracingcarright.avif",
+    "driver1_image": "teams/drivers/2025redbullracingmaxver01right.avif",
+    "driver2_image": "teams/drivers/2025redbullracingyuktsu01right.avif",
+    "color_class": "redbull-bg"
+  }
+},
+{
+  "model": "main.aboutteams",
+  "pk": 4,
+  "fields": {
+    "name": "Ferrari",
+    "driver1_name": "Charles Leclerc",
+    "driver2_name": "Lewis Hamilton",
+    "driver1_number": 16,
+    "driver2_number": 44,
+    "slug": "ferrari",
+    "description": "Ferrari is one of the most iconic and historic teams in Formula 1. With over 70 years in the sport, Ferrari has won numerous Constructors’ and Drivers’ Championships. In 2025, the team focused on improving car performance, reliability, and race strategy to return to the top of the grid.\r\n\r\nThe driver lineup featured Charles Leclerc and Lewis Hamilton. Leclerc brought youthful speed and determination, while Hamilton contributed experience, consistency, and championship-winning expertise. Together, they worked to extract maximum performance from the car in every race.\r\n\r\nFerrari’s 2025 car emphasized aerodynamics, tire management, and power unit efficiency. The engineering team continuously developed upgrades to close the gap with rivals and maintain competitiveness on different circuits.\r\n\r\nThe team’s strategy was a key factor in their season. Ferrari aimed to execute optimal pit stops, tire choices, and race tactics to secure podiums and challenge for victories whenever possible.",
+    "logo": "teams/logos/Ferrari-Scuderia-Logo.png",
+    "car_image": "teams/cars/2025ferraricarright.avif",
+    "driver1_image": "teams/drivers/2025ferrarichalec01right.avif",
+    "driver2_image": "teams/drivers/2025ferrarilewham01right.avif",
+    "color_class": "ferrari-bg"
+  }
+},
+{
+  "model": "main.aboutteams",
+  "pk": 5,
+  "fields": {
+    "name": "McLaren",
+    "driver1_name": "Oscar Piastri",
+    "driver2_name": "Lando Norris",
+    "driver1_number": 81,
+    "driver2_number": 4,
+    "slug": "mclaren",
+    "description": "McLaren is one of the most historic and respected teams in Formula 1. Founded in 1963, the team has won multiple Constructors’ and Drivers’ Championships over the decades. In 2025, McLaren focused on combining speed, consistency, and strategy to stay competitive in the top midfield and occasionally fight for podiums.\r\n\r\nThe team’s drivers, Lando Norris and Oscar Piastri, bring a mix of experience and youth. Norris is known for his smooth driving style and consistency, while Piastri’s talent and aggressive racing have made him one of the most promising young drivers on the grid. Together, they aim to push McLaren back into championship contention.\r\n\r\nMcLaren’s 2025 car was designed with aerodynamics and tire management in mind. The engineering team worked tirelessly to improve the chassis and reliability, focusing on circuits where strategic calls can make the difference.\r\n\r\nThroughout the season, McLaren demonstrated resilience and adaptability. They often scored points in challenging conditions and occasionally surprised the front-runners with competitive lap times and overtakes, showing that the team remains a strong presence in Formula 1.",
+    "logo": "teams/logos/mclaren_2CCHaBo.webp",
+    "car_image": "teams/cars/2025mclarencarright.avif",
+    "driver1_image": "teams/drivers/2025mclarenoscpia01right.avif",
+    "driver2_image": "teams/drivers/2025mclarenlannor01right.avif",
+    "color_class": "mclaren-bg"
+  }
+},
+{
+  "model": "main.aboutteams",
+  "pk": 6,
+  "fields": {
+    "name": "Williams",
+    "driver1_name": "Alex Albon",
+    "driver2_name": "Carlos Sainz",
+    "driver1_number": 23,
+    "driver2_number": 55,
+    "slug": "williams",
+    "description": "Williams is a team with a long and proud heritage in Formula 1. Known for its engineering excellence and history of champions, Williams aimed to rebuild and strengthen its position in the 2025 season. The team focused on car development, reliability, and consistent points finishes.\r\n\r\nThe drivers for 2025 were Alexander Albon and Carlos Sainz. Albon’s experience and steady driving style complemented Sainz’s speed and adaptability. This pairing helped the team test setups effectively and gain valuable race data.\r\n\r\nWilliams’ car focused on aerodynamics, balance, and tire performance. Engineers worked on refining the chassis and improving efficiency to compete in the midfield.\r\n\r\nThroughout the season, Williams demonstrated steady progress. They achieved consistent point-scoring finishes, gradually improving their position in the Constructors’ Championship and gaining confidence for future races.",
+    "logo": "teams/logos/williams.png",
+    "car_image": "teams/cars/2025williamscarright.avif",
+    "driver1_image": "teams/drivers/2025williamsalealb01right.avif",
+    "driver2_image": "teams/drivers/2025williamscarsai01right.avif",
+    "color_class": "williams-bg"
+  }
+},
+{
+  "model": "main.aboutteams",
+  "pk": 7,
+  "fields": {
+    "name": "Racing Bulls",
+    "driver1_name": "Liam Lawson",
+    "driver2_name": "Isack Hadjar",
+    "driver1_number": 30,
+    "driver2_number": 6,
+    "slug": "racingbulls",
+    "description": "Racing Bulls is a team focused on nurturing young talent and developing competitive cars in Formula 1. In 2025, the team aimed to maximize performance in the midfield and surprise rivals with innovative strategies.\r\n\r\nThe driver lineup consisted of Liam Lawson and Isack Hadjar. Lawson’s speed and determination combined with Hadjar’s adaptability and raw talent to create a dynamic pair. Both drivers contributed to the development of the car throughout the season.\r\n\r\nRacing Bulls’ 2025 car emphasized agility, tire management, and aerodynamic efficiency. The team worked on upgrading components continuously to maintain competitiveness against other midfield teams.\r\n\r\nStrategy played an important role for Racing Bulls. Bold pit-stop decisions and aggressive tire choices allowed the team to gain positions during races and score valuable points in challenging circumstances.",
+    "logo": "teams/logos/red-bull_MLmE8L1.png",
+    "car_image": "teams/cars/2025racingbullscarright.avif",
+    "driver1_image": "teams/drivers/2025racingbullslialaw01right.avif",
+    "driver2_image": "teams/drivers/2025racingbullsisahad01right.avif",
+    "color_class": "racingbulls-bg"
+  }
+},
+{
+  "model": "main.aboutteams",
+  "pk": 8,
+  "fields": {
+    "name": "Aston Martin",
+    "driver1_name": "Lance Stroll",
+    "driver2_name": "Fernando Alonso",
+    "driver1_number": 18,
+    "driver2_number": 14,
+    "slug": "astonmartin",
+    "description": "Aston Martin combines experience, ambition, and technical expertise in Formula 1. In 2025, the team focused on improving car performance, reliability, and race strategy to consistently fight for points.\r\n\r\nThe drivers were Fernando Alonso and Lance Stroll. Alonso brought decades of experience, providing crucial feedback for car development and race strategy, while Stroll offered consistent performance and adaptability.\r\n\r\nThe team’s 2025 car focused on aerodynamics, power unit efficiency, and tire management. Engineers worked on continuous upgrades to improve performance across circuits with varying characteristics.\r\n\r\nAston Martin emphasized strategic planning during races. Pit stop timing, tire selection, and fuel management were carefully managed to maximize the team’s potential and secure regular points finishes.",
+    "logo": "teams/logos/astonmartin.webp",
+    "car_image": "teams/cars/2025astonmartincarright.avif",
+    "driver1_image": "teams/drivers/2025astonmartinlanstr01right.avif",
+    "driver2_image": "teams/drivers/2025astonmartinferalo01right.avif",
+    "color_class": "astonmartin-bg"
+  }
+},
+{
+  "model": "main.aboutteams",
+  "pk": 9,
+  "fields": {
+    "name": "Haas F1 Team",
+    "driver1_name": "Esteban Ocon",
+    "driver2_name": "Oliver Bearman",
+    "driver1_number": 31,
+    "driver2_number": 87,
+    "slug": "haas",
+    "description": "Haas is focused on building momentum in the competitive midfield of Formula 1. In 2025, the team aimed to improve car reliability, consistency, and race performance.\r\n\r\nThe drivers were Esteban Ocon and Oliver Bearman. Ocon’s experience and tactical awareness complemented Bearman’s youthful energy and speed, creating a balanced driver lineup for the season.\r\n\r\nHaas’ 2025 car was developed to maximize performance in qualifying and races. The engineering team worked on upgrades to improve aerodynamics, tire management, and overall race pace.\r\n\r\nThe team relied heavily on strategic decisions during races. Proper pit stop timing and tactical tire changes allowed Haas to gain positions and achieve consistent points finishes despite the challenges of competing in a strong midfield.",
+    "logo": "teams/logos/5bfb4adeec547.jpg",
+    "car_image": "teams/cars/2025haasf1teamcarright.avif",
+    "driver1_image": "teams/drivers/2025haasestoco01right.avif",
+    "driver2_image": "teams/drivers/2025haasolibea01right.avif",
+    "color_class": "haas-bg"
+  }
+},
+{
+  "model": "main.aboutteams",
+  "pk": 10,
+  "fields": {
+    "name": "Sauber",
+    "driver1_name": "Nico Hulkenberg",
+    "driver2_name": "Gabriel Bortoleto",
+    "driver1_number": 27,
+    "driver2_number": 5,
+    "slug": "sauber",
+    "description": "Sauber combines experience with young talent in Formula 1. In 2025, the team aimed to score points consistently while developing drivers and improving car performance.\r\n\r\nThe driver lineup consisted of Nico Hulkenberg and Gabriel Bortoleto. Hulkenberg brought extensive experience and consistency, while Bortoleto added youthful energy and learning potential. Together, they contributed to car development and race strategy.\r\n\r\nSauber’s 2025 car focused on reliability, balance, and tire management. The engineering team worked on incremental upgrades to improve competitiveness against other midfield teams.\r\n\r\nStrategic planning was crucial for Sauber. Pit stops, tire choices, and race tactics were optimized to extract maximum points in every race and support the growth of young drivers.",
+    "logo": "teams/logos/sauber.png",
+    "car_image": "teams/cars/2025kicksaubercarright.avif",
+    "driver1_image": "teams/drivers/2025kicksaubernichul01right.avif",
+    "driver2_image": "teams/drivers/2025kicksaubergabbor01right.avif",
+    "color_class": "sauber-bg"
+  }
+},
+{
+  "model": "main.aboutteams",
+  "pk": 11,
+  "fields": {
+    "name": "Alpine",
+    "driver1_name": "Pierre Gasly",
+    "driver2_name": "Franco Colapinto",
+    "driver1_number": 10,
+    "driver2_number": 43,
+    "slug": "alpine",
+    "description": "Alpine is a team known for combining technical development with strong driver performance. In 2025, they focused on maximizing competitiveness in the midfield and achieving consistent results.\r\n\r\nThe driver lineup included Pierre Gasly and Franco Colapinto. Gasly’s experience and skill complemented Colapinto’s youth and adaptability, allowing Alpine to extract maximum performance from the car.\r\n\r\nAlpine’s 2025 car emphasized balance, reliability, and tire efficiency. The engineering team continually introduced updates to improve performance on circuits requiring both speed and precision.\r\n\r\nStrategic decisions were crucial for Alpine throughout the season. Optimized pit stops, tire selection, and race planning helped the team consistently score points and compete with other midfield rivals.",
+    "logo": "teams/logos/images.png",
+    "car_image": "teams/cars/2025alpinecarright.avif",
+    "driver1_image": "teams/drivers/2025alpinepiegas01right.avif",
+    "driver2_image": "teams/drivers/2025alpinefracol01right.avif",
+    "color_class": "alpine-bg"
+  }
+},
+{
+  "model": "main.statistics",
+  "pk": 1,
+  "fields": {
+    "team": 2,
+    "season_position": 2,
+    "prix_races": 24,
+    "prix_wins": 2,
+    "dhl": 3,
+    "sprint_races": 6,
+    "sprint_wins": 0,
+    "sprint_poles": 1,
+    "season_oints": 469,
+    "prix_points": 424,
+    "prix_podiums": 12,
+    "top": 37,
+    "dnfs": 4
+  }
+},
+{
+  "model": "main.statistics",
+  "pk": 2,
+  "fields": {
+    "team": 3,
+    "season_position": 3,
+    "prix_races": 24,
+    "prix_wins": 6,
+    "dhl": 3,
+    "sprint_races": 6,
+    "sprint_wins": 2,
+    "sprint_poles": 1,
+    "season_oints": 41,
+    "prix_points": 410,
+    "prix_podiums": 15,
+    "top": 8,
+    "dnfs": 3
+  }
+},
+{
+  "model": "main.statistics",
+  "pk": 3,
+  "fields": {
+    "team": 4,
+    "season_position": 4,
+    "prix_races": 24,
+    "prix_wins": 0,
+    "dhl": 2,
+    "sprint_races": 6,
+    "sprint_wins": 1,
+    "sprint_poles": 1,
+    "season_oints": 38,
+    "prix_points": 360,
+    "prix_podiums": 7,
+    "top": 8,
+    "dnfs": 4
+  }
+},
+{
+  "model": "main.statistics",
+  "pk": 4,
+  "fields": {
+    "team": 5,
+    "season_position": 1,
+    "prix_races": 24,
+    "prix_wins": 14,
+    "dhl": 12,
+    "sprint_races": 6,
+    "sprint_wins": 3,
+    "sprint_poles": 3,
+    "season_oints": 833,
+    "prix_points": 775,
+    "prix_podiums": 34,
+    "top": 9,
+    "dnfs": 3
+  }
+},
+{
+  "model": "main.statistics",
+  "pk": 5,
+  "fields": {
+    "team": 6,
+    "season_position": 5,
+    "prix_races": 24,
+    "prix_wins": 0,
+    "dhl": 1,
+    "sprint_races": 6,
+    "sprint_wins": 0,
+    "sprint_poles": 0,
+    "season_oints": 137,
+    "prix_points": 124,
+    "prix_podiums": 2,
+    "top": 5,
+    "dnfs": 8
+  }
+},
+{
+  "model": "main.statistics",
+  "pk": 6,
+  "fields": {
+    "team": 7,
+    "season_position": 6,
+    "prix_races": 24,
+    "prix_wins": 0,
+    "dhl": 0,
+    "sprint_races": 6,
+    "sprint_wins": 0,
+    "sprint_poles": 0,
+    "season_oints": 92,
+    "prix_points": 88,
+    "prix_podiums": 1,
+    "top": 7,
+    "dnfs": 6
+  }
+},
+{
+  "model": "main.statistics",
+  "pk": 7,
+  "fields": {
+    "team": 10,
+    "season_position": 9,
+    "prix_races": 24,
+    "prix_wins": 0,
+    "dhl": 0,
+    "sprint_races": 6,
+    "sprint_wins": 0,
+    "sprint_poles": 0,
+    "season_oints": 70,
+    "prix_points": 70,
+    "prix_podiums": 1,
+    "top": 2,
+    "dnfs": 7
+  }
+},
+{
+  "model": "main.statistics",
+  "pk": 8,
+  "fields": {
+    "team": 8,
+    "season_position": 7,
+    "prix_races": 24,
+    "prix_wins": 0,
+    "dhl": 0,
+    "sprint_races": 6,
+    "sprint_wins": 0,
+    "sprint_poles": 0,
+    "season_oints": 89,
+    "prix_points": 80,
+    "prix_podiums": 0,
+    "top": 6,
+    "dnfs": 7
+  }
+},
+{
+  "model": "main.statistics",
+  "pk": 9,
+  "fields": {
+    "team": 9,
+    "season_position": 8,
+    "prix_races": 24,
+    "prix_wins": 0,
+    "dhl": 0,
+    "sprint_races": 6,
+    "sprint_wins": 0,
+    "sprint_poles": 0,
+    "season_oints": 79,
+    "prix_points": 73,
+    "prix_podiums": 0,
+    "top": 2,
+    "dnfs": 4
+  }
+},
+{
+  "model": "main.statistics",
+  "pk": 10,
+  "fields": {
+    "team": 11,
+    "season_position": 10,
+    "prix_races": 24,
+    "prix_wins": 0,
+    "dhl": 0,
+    "sprint_races": 6,
+    "sprint_wins": 0,
+    "sprint_poles": 0,
+    "season_oints": 22,
+    "prix_points": 20,
+    "prix_podiums": 0,
+    "top": 3,
+    "dnfs": 4
+  }
+},
+{
+  "model": "main.aboutdriver",
+  "pk": 3,
+  "fields": {
+    "name": "Charles Leclerc",
+    "slug": "leclerc",
+    "team": 4,
+    "birthday": "1997-10-16",
+    "nationality": "Monaco",
+    "driver_number": 16,
+    "place_of_birth": "Monte Carlo, Monaco",
+    "description": "Charles Leclerc is a Monegasque Formula 1 driver racing for Ferrari and is known for his speed, precision, and determination. Born on October 16, 1997, Leclerc began his racing career in karting and quickly progressed through the junior categories with strong results.\r\n\r\nLeclerc entered Formula 1 after an impressive junior career and soon earned a place at Ferrari, one of the most famous teams in motorsport history. From his early races with the team, he showed his ability to deliver standout performances, particularly during qualifying sessions.\r\n\r\nHe is known for his aggressive yet controlled driving style, often pushing the car to its limits while maintaining precision. Leclerc’s ability to extract maximum performance over a single lap has earned him multiple pole positions and memorable race results.\r\n\r\nWith strong support from Ferrari fans around the world, Charles Leclerc remains a central figure in the team’s pursuit of future championships. His passion for racing, combined with his talent and commitment, continues to define his journey in Formula 1.",
+    "image": "drivers/CharlesLeclerc2025_1AbJAbY.webp",
+    "driver_image": "drivers/2025ferrarichalec01right_DPavOUg.avif",
+    "color_class": "leclerc-bg"
+  }
+},
+{
+  "model": "main.aboutdriver",
+  "pk": 4,
+  "fields": {
+    "name": "Lewis Hamilton",
+    "slug": "hamilton",
+    "team": 4,
+    "birthday": "1985-01-07",
+    "nationality": "United Kingdom",
+    "driver_number": 44,
+    "place_of_birth": "Stevenage, England",
+    "description": "Lewis Hamilton is a British Formula 1 driver and one of the most successful figures in the history of the sport. Born on January 7, 1985, Hamilton rose through the ranks of motorsport with remarkable speed and entered Formula 1 in 2007, immediately competing at the highest level.\r\n\r\nFrom the beginning of his career, Hamilton demonstrated exceptional skill, confidence, and determination. Over the years, he has achieved multiple World Championship titles and set numerous records, establishing himself as one of the greatest drivers Formula 1 has ever seen.\r\n\r\nHamilton is particularly known for his racecraft, tire management, and ability to perform in difficult and changing conditions. His consistency and focus have allowed him to remain competitive across many seasons, even as cars, regulations, and rivals have changed.\r\n\r\nBeyond his achievements on track, Hamilton is respected for his professionalism, leadership, and influence within the sport. Even after many years in Formula 1, he continues to compete at a high level and remains a central figure in modern motorsport.",
+    "image": "drivers/hamilton_MxGXkS1.jpg",
+    "driver_image": "drivers/2025ferrarilewham01right_bYGpo7b.avif",
+    "color_class": "hamilton-bg"
+  }
+},
+{
+  "model": "main.aboutdriver",
+  "pk": 5,
+  "fields": {
+    "name": "Oscar Piastri",
+    "slug": "piastri",
+    "team": 5,
+    "birthday": "2001-06-01",
+    "nationality": "Australia",
+    "driver_number": 81,
+    "place_of_birth": "Melbourne, Victoria",
+    "description": "Oscar Piastri is an Australian Formula 1 driver who has quickly gained recognition for his calm mindset and exceptional racing intelligence. Born on April 6, 2001, Piastri built an impressive foundation in junior motorsport, winning multiple championships and demonstrating consistency well beyond his years.\r\n\r\nHe made his Formula 1 debut with McLaren and adapted rapidly to the demands of the sport. Unlike many young drivers, Piastri showed strong composure from his earliest races, avoiding mistakes and learning quickly from each weekend. His smooth and precise driving style allowed him to compete confidently against experienced rivals.\r\n\r\nPiastri is known for his strong racecraft, clean overtaking, and ability to manage pressure during close battles. He combines technical understanding with disciplined decision-making, making him a reliable and valuable driver for his team.\r\n\r\nAs his experience grows, Oscar Piastri continues to unlock more performance and confidence. Widely regarded as one of the brightest young talents in Formula 1, he represents a key part of the sport’s future and McLaren’s long-term ambitions.",
+    "image": "drivers/piastri.jpg",
+    "driver_image": "drivers/2025mclarenoscpia01right.avif",
+    "color_class": "piastri-bg"
+  }
+},
+{
+  "model": "main.aboutdriver",
+  "pk": 6,
+  "fields": {
+    "name": "Lando Norris",
+    "slug": "norris",
+    "team": 5,
+    "birthday": "1999-11-13",
+    "nationality": "United Kingdom",
+    "driver_number": 4,
+    "place_of_birth": "Bristol, England",
+    "description": "Lando Norris is a British Formula 1 driver racing for McLaren and is widely seen as one of the leading talents of his generation. Born on November 13, 1999, Norris began karting at a young age and quickly proved himself as a standout competitor. His early success in junior racing categories highlighted his natural speed, strong race awareness, and ability to adapt quickly to new challenges.\r\n\r\nNorris entered Formula 1 in 2019 and impressed immediately with his maturity and confidence despite his young age. From his first season, he showed an ability to compete against more experienced drivers while delivering consistent performances. His calm approach and technical understanding helped him develop rapidly within the highly competitive environment of Formula 1.\r\n\r\nOver time, Norris has grown into a key figure at McLaren, playing an important role in the team’s progress toward the front of the grid. He has achieved podium finishes and race victories through a combination of strong qualifying performances, intelligent race strategy, and controlled aggression on track.\r\n\r\nKnown for his smooth driving style, excellent tire management, and determination, Lando Norris continues to improve each season. His dedication to his craft and strong connection with fans have made him one of the most popular drivers in the sport and a future World Championship contender.",
+    "image": "drivers/norris.jpeg",
+    "driver_image": "drivers/2025mclarenlannor01right.avif",
+    "color_class": "norris-bg"
+  }
+},
+{
+  "model": "main.aboutdriver",
+  "pk": 7,
+  "fields": {
+    "name": "Max Verstappen",
+    "slug": "verstappen",
+    "team": 3,
+    "birthday": "1997-09-30",
+    "nationality": "Netherlands",
+    "driver_number": 1,
+    "place_of_birth": "Hasselt, Belgium",
+    "description": "Max Verstappen is a Dutch Formula 1 driver widely regarded as one of the most talented racers of his generation. Born on September 30, 1997, in Hasselt, Belgium, he began racing at a very young age and quickly stood out for his speed, confidence, and aggressive driving style.\r\n\r\nVerstappen made history in 2015 by becoming the youngest driver ever to compete in Formula 1. Just one year later, he achieved another milestone by winning his first Grand Prix at the Spanish Grand Prix, becoming the youngest race winner in Formula 1 history. Since then, he has been a key driver for Red Bull Racing, consistently competing at the front of the grid.\r\n\r\nKnown for his exceptional car control, racecraft, and ability to perform under pressure, Max Verstappen has earned multiple World Championship titles and numerous race victories. His dedication, determination, and passion for racing have made him a fan favorite and a dominant force in modern Formula 1.\r\n\r\nToday, Max Verstappen continues to push the limits of the sport, setting new records and shaping the future of Formula 1.",
+    "image": "drivers/verstappen.webp",
+    "driver_image": "drivers/2025redbullracingmaxver01right.avif",
+    "color_class": "verstappen-bg"
+  }
+},
+{
+  "model": "main.aboutdriver",
+  "pk": 8,
+  "fields": {
+    "name": "Yuki Tsunoda",
+    "slug": "tsunoda",
+    "team": 3,
+    "birthday": "2000-05-11",
+    "nationality": "Japan",
+    "driver_number": 22,
+    "place_of_birth": "Sagamihara, Japan",
+    "description": "Yuki Tsunoda is a Japanese Formula 1 driver known for his speed, determination, and bold racing style. Born on May 11, 2000, in Sagamihara, Japan, Tsunoda began his motorsport career in karting before quickly rising through the junior racing categories.\r\n\r\nAfter impressive performances in Formula 2, Tsunoda made his Formula 1 debut in 2021 with Scuderia AlphaTauri (now Visa Cash App RB). In his very first race, he scored points, immediately showing his potential at the highest level of motorsport. Since then, he has continued to develop as a driver, gaining experience and refining his racecraft.\r\n\r\nTsunoda is known for his aggressive overtaking, strong qualifying pace, and growing consistency. Supported by Honda, he represents a new generation of Japanese talent in Formula 1 and plays an important role in the Red Bull driver program.\r\n\r\nWith his passion for racing and constant drive to improve, Yuki Tsunoda continues to establish himself as a competitive and exciting presence on the Formula 1 grid.",
+    "image": "drivers/tsunoda.avif",
+    "driver_image": "drivers/2025redbullracingyuktsu01right.avif",
+    "color_class": "tsunoda-bg"
+  }
+},
+{
+  "model": "main.aboutdriver",
+  "pk": 9,
+  "fields": {
+    "name": "George Russell",
+    "slug": "russell",
+    "team": 2,
+    "birthday": "1998-08-15",
+    "nationality": "United Kingdom",
+    "driver_number": 63,
+    "place_of_birth": "King's Lynn, England",
+    "description": "George Russell is a British Formula 1 driver currently racing for Mercedes-AMG Petronas Formula One Team and is regarded as one of the brightest talents of his generation. Born on February 15, 1998, in King’s Lynn, England, Russell began karting at a young age and quickly established himself as a highly skilled and determined driver. He progressed through the junior categories with consistent success, winning multiple championships, including the highly competitive Formula 2 title in 2018.\r\n\r\nRussell made his Formula 1 debut in 2019 with Williams, where his exceptional qualifying speed and racecraft often allowed him to outperform the car’s limitations. Even in a less competitive team, he consistently impressed fans and rivals with his technical understanding, calm demeanor, and ability to extract maximum performance from the car.\r\n\r\nIn 2022, Russell joined Mercedes alongside seven-time World Champion Lewis Hamilton, marking a significant step in his career. He has since delivered strong performances, including podium finishes and notable battles with top drivers, demonstrating maturity, precision, and the ability to compete at the front of the grid. His adaptability and strategic approach to racing have made him a key asset for Mercedes.\r\n\r\nKnown for his intelligence on track, smooth driving style, and unwavering focus, George Russell continues to grow as a driver. With his talent, dedication, and determination, he is widely seen as a future World Champion and a central figure in Formula 1’s next generation of stars.",
+    "image": "drivers/russel.webp",
+    "driver_image": "drivers/2025mercedesgeorus01right.avif",
+    "color_class": "russell-bg"
+  }
+},
+{
+  "model": "main.aboutdriver",
+  "pk": 10,
+  "fields": {
+    "name": "Kimi Antonelli",
+    "slug": "antonelli",
+    "team": 2,
+    "birthday": "2006-08-26",
+    "nationality": "Italy",
+    "driver_number": 12,
+    "place_of_birth": "Bologna, Italy",
+    "description": "Kimi Antonelli is an Italian Formula 1 driver racing for Mercedes‑AMG Petronas Formula One Team and is considered one of the brightest young talents in motorsport. Born on August 25, 2006, in Bologna, Italy, he began karting at a young age and quickly achieved success in multiple championships. His rapid rise through the junior categories earned him a place in the Mercedes Junior Team and recognition as a future star.\r\n\r\nAntonelli made his Formula 1 debut in 2025 with Mercedes, becoming one of the youngest drivers in F1 history. Despite his rookie status, he impressed with consistent points finishes, podiums, and strong performances in challenging races, demonstrating speed, intelligence, and maturity beyond his years.\r\n\r\nKnown for his calm and focused driving style, Antonelli combines natural talent with strong technical understanding and adaptability. Off the track, he balances racing with education and personal projects, showing discipline and dedication in all aspects of his life.\r\n\r\nKimi Antonelli continues to develop as a driver in Formula 1 and is widely regarded as a future World Championship contender. His talent, determination, and early achievements have already made him a standout figure in the sport.",
+    "image": "drivers/antonelli.webp",
+    "driver_image": "drivers/2025mercedesandant01right_xzfwnOD.avif",
+    "color_class": "antonelli-bg"
+  }
+},
+{
+  "model": "main.aboutdriver",
+  "pk": 11,
+  "fields": {
+    "name": "Lance Stroll",
+    "slug": "stroll",
+    "team": 8,
+    "birthday": "1998-10-25",
+    "nationality": "Canada",
+    "driver_number": 13,
+    "place_of_birth": "Montreal, Canada",
+    "description": "Lance Stroll is a Canadian Formula 1 driver racing for Aston Martin and is known for his speed and determination. Born on October 29, 1998, in Montreal, Canada, Stroll began karting at a young age and quickly progressed through junior motorsport, winning multiple championships along the way.\r\n\r\nStroll made his Formula 1 debut in 2017 with Williams and immediately became the youngest rookie to score a podium at the Azerbaijan Grand Prix. Over the years, he has developed into a key driver for Aston Martin, providing strong race performances and consistently scoring points for his team.\r\n\r\nKnown for his smooth driving style and ability to manage tires effectively, Stroll is often competitive in qualifying and races where strategy is important. He has shown resilience and growth throughout his career, earning respect from teammates and rivals alike.\r\n\r\nLance Stroll continues to build his Formula 1 career and is regarded as a consistent front-runner in midfield battles, with the potential to achieve further podiums and strong results in the future.",
+    "image": "drivers/stroll.jpg",
+    "driver_image": "drivers/2025astonmartinlanstr01right.avif",
+    "color_class": "stroll-bg"
+  }
+},
+{
+  "model": "main.aboutdriver",
+  "pk": 12,
+  "fields": {
+    "name": "Fernando Alonso",
+    "slug": "alonso",
+    "team": 8,
+    "birthday": "1981-07-29",
+    "nationality": "Spain",
+    "driver_number": 14,
+    "place_of_birth": "Oviedo, Spain",
+    "description": "Fernando Alonso is a Spanish Formula 1 driver racing for Aston Martin and one of the most accomplished drivers in the history of the sport. Born on July 29, 1981, in Oviedo, Spain, Alonso became a double Formula 1 World Champion with Renault in 2005 and 2006.\r\n\r\nAfter returning to F1 in 2021 following a brief hiatus, Alonso has impressed with his exceptional racecraft, strategic intelligence, and ability to extract maximum performance from the car. He is renowned for his skill in both qualifying and races, particularly in challenging conditions.\r\n\r\nAlonso is also respected for his leadership and mentoring abilities, often helping teams improve their performance through detailed technical feedback. His longevity and adaptability have made him one of the most influential figures in modern Formula 1.\r\n\r\nEven in the later stages of his career, Alonso continues to deliver competitive results and remains a central figure in the championship fight, demonstrating that his talent and determination remain unmatched.",
+    "image": "drivers/alonso.jpg",
+    "driver_image": "drivers/2025astonmartinferalo01right.avif",
+    "color_class": "alonso-bg"
+  }
+},
+{
+  "model": "main.aboutdriver",
+  "pk": 13,
+  "fields": {
+    "name": "Alex Albon",
+    "slug": "albon",
+    "team": 6,
+    "birthday": "1996-03-23",
+    "nationality": "Thailand",
+    "driver_number": 23,
+    "place_of_birth": "London, England",
+    "description": "Alexander Albon is a Thai-British Formula 1 driver racing for Williams and is recognized for his speed, versatility, and resilience. Born on March 23, 1996, in London, United Kingdom, Albon began karting at a young age and rose through the junior ranks with impressive performances in Formula Renault and GP3.\r\n\r\nAlbon made his F1 debut with Toro Rosso in 2019 and was quickly promoted to Red Bull Racing during the same season. Known for his raw speed and aggressive yet controlled driving style, he achieved multiple podiums while competing against some of the best drivers on the grid.\r\n\r\nAfter a brief period out of Formula 1, Albon returned in 2022 with Williams, bringing experience, technical knowledge, and a strong competitive mindset to the team. His ability to adapt to different cars and extract performance has helped Williams improve in the constructors’ standings.\r\n\r\nAlexander Albon is admired for his determination, racecraft, and ability to deliver in high-pressure situations. He continues to be an important figure for Williams, combining experience with youthful energy to push the team forward.",
+    "image": "drivers/albon.jpg",
+    "driver_image": "drivers/2025williamsalealb01right.avif",
+    "color_class": "albon-bg"
+  }
+},
+{
+  "model": "main.aboutdriver",
+  "pk": 14,
+  "fields": {
+    "name": "Carlos Sainz",
+    "slug": "sainz",
+    "team": 6,
+    "birthday": "1994-09-01",
+    "nationality": "Spain",
+    "driver_number": 55,
+    "place_of_birth": "Madrid, Spain",
+    "description": "Carlos Sainz is a Spanish Formula 1 driver racing for Ferrari, known for his consistency, technical skill, and racecraft. Born on September 1, 1994, in Madrid, Spain, Sainz comes from a motorsport family—his father, Carlos Sainz Sr., is a two-time World Rally Champion.\r\n\r\nSainz made his Formula 1 debut in 2015 with Toro Rosso and quickly earned a reputation as a reliable and intelligent driver. Over the years, he has driven for Renault and McLaren, achieving multiple podium finishes and proving his ability to maximize the performance of any car.\r\n\r\nKnown for his smooth driving style, tire management, and strong qualifying performances, Sainz is considered one of the most consistent midfield and front-row challengers in the sport. He has a calm, analytical approach that allows him to make smart decisions in races.\r\n\r\nSince joining Ferrari, Sainz has become an essential part of the team’s championship ambitions, helping to deliver strong results and supporting the development of the car. His dedication, professionalism, and consistent pace make him a respected figure in Formula 1.",
+    "image": "drivers/sainz.jpeg",
+    "driver_image": "drivers/2025williamscarsai01right.avif",
+    "color_class": "sainz-bg"
+  }
+},
+{
+  "model": "main.aboutdriver",
+  "pk": 15,
+  "fields": {
+    "name": "Esteban Ocon",
+    "slug": "ocon",
+    "team": 9,
+    "birthday": "1996-09-17",
+    "nationality": "France",
+    "driver_number": 31,
+    "place_of_birth": "Évreux, Normandy",
+    "description": "Esteban Ocon is a French Formula 1 driver currently racing for Alpine (formerly Renault) and is known for his consistency and technical skill. Born on September 17, 1996, in Évreux, France, Ocon began karting at an early age and quickly progressed through the junior ranks, winning multiple championships.\r\n\r\nOcon made his F1 debut in 2016 with Manor and later joined Force India/ Racing Point, steadily proving himself as a reliable and skilled driver. His breakthrough came in 2021 when he claimed his first Formula 1 victory at the Hungarian Grand Prix.\r\n\r\nKnown for his smooth driving style, race intelligence, and calm approach under pressure, Ocon is highly competitive in midfield battles and often maximizes his car’s potential. He is valued by Alpine for his ability to score consistent points and contribute to team development.\r\n\r\nEsteban Ocon continues to grow as a driver, consistently challenging his teammates and other midfield drivers, and is seen as a key figure for Alpine’s future success in Formula 1.",
+    "image": "drivers/ocon.jpg",
+    "driver_image": "drivers/2025haasestoco01right.avif",
+    "color_class": "ocon-bg"
+  }
+},
+{
+  "model": "main.aboutdriver",
+  "pk": 16,
+  "fields": {
+    "name": "Oliver Bearman",
+    "slug": "bearman",
+    "team": 9,
+    "birthday": "2005-05-08",
+    "nationality": "United Kingdom",
+    "driver_number": 87,
+    "place_of_birth": "Chelmsford, England",
+    "description": "Oliver Bearman is a British racing driver and part of the new generation of Formula 1 talent. Born on August 27, 2005, Bearman has shown exceptional promise in junior categories, including Formula 2, where he has quickly gained attention for his speed and racecraft.\r\n\r\nBearman is part of the Sauber/Alfa Romeo development program and is considered a rising star in Formula 1, known for his smooth driving style, quick learning, and ability to handle pressure. His performances in junior formulas suggest a bright future in the sport.\r\n\r\nHe is praised for his technical feedback, adaptability, and consistency, which have made him a standout among his peers. Bearman continues to work toward a full-time Formula 1 seat, building experience and gaining recognition in highly competitive series.\r\n\r\nOliver Bearman represents the future generation of F1 drivers and is closely watched by teams and fans for his rapid progression and potential impact on the championship battles to come.",
+    "image": "drivers/bearman.jpg",
+    "driver_image": "drivers/2025haasolibea01right.avif",
+    "color_class": "bearman-bg"
+  }
+},
+{
+  "model": "main.aboutdriver",
+  "pk": 17,
+  "fields": {
+    "name": "Liam Lawson",
+    "slug": "lawson",
+    "team": 3,
+    "birthday": "2002-02-11",
+    "nationality": "New Zealand",
+    "driver_number": 30,
+    "place_of_birth": "Hastings, New Zealand",
+    "description": "Liam Lawson is a New Zealand racing driver known for his speed and competitive spirit. Born on February 11, 2002, in Hastings, New Zealand, Lawson began karting at a young age and quickly rose through the ranks of junior motorsport, winning multiple championships.\r\n\r\nLawson has competed in Formula 2 and FIA Formula 3, showing strong racecraft and consistency. He has been affiliated with Red Bull’s junior program, which has provided him opportunities to test and gain experience with Formula 1 machinery.\r\n\r\nLawson is recognized for his aggressive yet controlled driving style and adaptability in challenging conditions. He continues to be a promising young talent, widely regarded as a future Formula 1 driver.",
+    "image": "drivers/lawson.jpg",
+    "driver_image": "drivers/2025racingbullslialaw01right.avif",
+    "color_class": "lawson-bg"
+  }
+},
+{
+  "model": "main.aboutdriver",
+  "pk": 18,
+  "fields": {
+    "name": "Isack Hadjar",
+    "slug": "hadjar",
+    "team": 7,
+    "birthday": "2004-09-28",
+    "nationality": "France",
+    "driver_number": 6,
+    "place_of_birth": "Paris, France",
+    "description": "Isack Hadjar is a young and highly talented French-Algerian racing driver, widely regarded as one of the most promising prospects of the new generation. Born on January 16, 2004, Hadjar began his motorsport journey in karting at a very young age, quickly demonstrating natural speed, racecraft, and adaptability. His success in karting laid a strong foundation for his rapid rise through single-seater categories.\r\n\r\nHadjar moved into formula racing in 2020, competing in regional and national Formula 4 championships. He quickly impressed with multiple podiums and race wins, showcasing his maturity and consistency on track. In 2022, Hadjar made a strong impression in Formula 3, securing several top-five finishes and establishing himself as a competitive and intelligent driver capable of managing races under pressure.\r\n\r\nIn 2023, Hadjar progressed to Formula 2, the final step before Formula 1. There, he continued to demonstrate his raw speed, adaptability to different circuits, and tactical awareness. Known for his aggressive yet controlled driving style, Hadjar is especially skilled at overtaking and maximizing performance in tricky conditions, making him a standout among his peers.\r\n\r\nHadjar is part of the Red Bull Junior Team, which underscores the confidence major teams have in his potential. With a combination of natural talent, technical feedback, and mental resilience, Isack Hadjar is widely considered a future Formula 1 driver, with many predicting he could become a championship contender in the years to come.",
+    "image": "drivers/hadjar.avif",
+    "driver_image": "drivers/2025racingbullsisahad01right.avif",
+    "color_class": "hadjar-bg"
+  }
+},
+{
+  "model": "main.aboutdriver",
+  "pk": 19,
+  "fields": {
+    "name": "Nico Hulkenberg",
+    "slug": "hulkenberg",
+    "team": 10,
+    "birthday": "1987-08-19",
+    "nationality": "German",
+    "driver_number": 27,
+    "place_of_birth": "Emmerich am Rhein, Germany",
+    "description": "Nico Hulkenberg is a German Formula 1 driver known for his consistency, technical skill, and longevity in the sport. Born on August 19, 1987, in Emmerich, Germany, Hulkenberg began karting at a young age and quickly progressed through the junior motorsport ranks, winning the Formula 3 Euro Series in 2008. He made his mark early as a driver with a combination of speed, intelligence, and adaptability.\r\n\r\nHulkenberg made his Formula 1 debut in 2010 with Williams and quickly gained attention for his ability to extract performance from the car. Over the years, he has driven for Force India, Sauber, Renault, and Aston Martin, consistently scoring points and often outperforming the machinery he had. Despite not having driven for a championship-winning team, Hulkenberg is widely regarded as one of the most talented drivers never to have won a Grand Prix.\r\n\r\nOne of Hulkenberg’s career highlights came at the 2015 Brazilian Grand Prix, where he qualified on pole for Force India—the team’s first-ever pole position. Known for his precision, tire management, and strategic thinking, he has often been a strong performer in qualifying and tricky race conditions, earning him respect as a reliable and technically proficient driver.\r\n\r\nOff the track, Hulkenberg is praised for his professionalism, feedback, and mentoring of younger teammates. Even after stepping back from a full-time F1 seat, he has remained active in testing and reserve roles, ready to step in when needed. Nico Hulkenberg’s combination of experience, consistency, and talent has made him a valued and respected figure in Formula 1, admired by fans and peers alike.",
+    "image": "drivers/hulkenberg.jpg",
+    "driver_image": "drivers/2025kicksaubernichul01right.avif",
+    "color_class": "hulkenberg-bg"
+  }
+},
+{
+  "model": "main.aboutdriver",
+  "pk": 20,
+  "fields": {
+    "name": "Gabriel Bortoleto",
+    "slug": "bortoletto",
+    "team": 10,
+    "birthday": "2004-10-14",
+    "nationality": "Brazil",
+    "driver_number": 5,
+    "place_of_birth": "São Paulo, Brazil",
+    "description": "Gabriel Bortoleto is a Brazilian racing driver and one of the most promising young talents in motorsport. Born on January 9, 2004, in São Paulo, Brazil, Bortoleto began karting at a young age and quickly demonstrated exceptional speed, technical skill, and racecraft, winning multiple championships in his junior career.\r\n\r\nBortoleto progressed through formula racing in Europe, competing in series such as F4 and FIA Formula 3, where he consistently delivered strong results, podiums, and victories. His aggressive yet calculated driving style allows him to extract maximum performance from his car while managing tires and race strategy effectively.\r\n\r\nAs part of the next generation of Brazilian motorsport talent, Bortoleto is recognized for his maturity, adaptability, and ability to perform under pressure. His performances have drawn attention from Formula 1 teams, and he is considered a serious candidate for future F1 opportunities.\r\n\r\nGabriel Bortoleto continues to develop in higher-tier formula racing, with many predicting a bright future in Formula 1. His combination of natural talent, consistency, and technical understanding makes him one of the most exciting young drivers to watch.",
+    "image": "drivers/bortoletto.jpg",
+    "driver_image": "drivers/2025kicksaubergabbor01right.avif",
+    "color_class": "bortoletto-bg"
+  }
+},
+{
+  "model": "main.aboutdriver",
+  "pk": 21,
+  "fields": {
+    "name": "Pierre Gasly",
+    "slug": "gasly",
+    "team": 11,
+    "birthday": "1996-07-02",
+    "nationality": "France",
+    "driver_number": 10,
+    "place_of_birth": "Rouen, France",
+    "description": "Pierre Gasly is a French Formula 1 driver racing for Alpine, known for his speed, resilience, and ability to deliver standout performances under pressure. Born on February 7, 1996, in Rouen, France, Gasly progressed through karting and junior single-seater series, winning the GP2 Series (now Formula 2) in 2016, which earned him a promotion to Formula 1.\r\n\r\nGasly made his Formula 1 debut in 2017 with Toro Rosso (now AlphaTauri) and quickly gained a reputation for consistent pace and strong racecraft. He was promoted to Red Bull Racing in 2019, where he showed flashes of brilliance but struggled to match the top-tier machinery consistently.\r\n\r\nOne of Gasly’s career highlights came in 2020, when he won the Italian Grand Prix at Monza for AlphaTauri, marking a major milestone as the first French driver to win an F1 race since Olivier Panis in 1996. Known for his adaptability, tire management, and calmness under pressure, Gasly often outperforms his car in tricky conditions.\r\n\r\nBeyond racing, Gasly is admired for his professionalism, technical feedback, and mentoring younger drivers. He continues to be a competitive force at Alpine, helping the team challenge midfield rivals while aiming for podiums and strong championship points.",
+    "image": "drivers/gasly.webp",
+    "driver_image": "drivers/2025alpinepiegas01right.avif",
+    "color_class": "gasly-bg"
+  }
+},
+{
+  "model": "main.aboutdriver",
+  "pk": 22,
+  "fields": {
+    "name": "Franco Colapinto",
+    "slug": "colapinto",
+    "team": 11,
+    "birthday": "2003-05-27",
+    "nationality": "Argentina",
+    "driver_number": 43,
+    "place_of_birth": "Buenos Aires, Argentina",
+    "description": "Franco Colapinto is an Argentine racing driver and one of the brightest young talents from South America. Born on October 27, 2003, in Pilar, Argentina, Colapinto began karting at a young age and quickly made a name for himself with his speed, skill, and natural racing instincts.\r\n\r\nColapinto progressed through junior formula categories in Europe, including F4 Spanish Championship and F3, achieving multiple wins and podiums. His consistent performance and adaptability on different circuits marked him as a driver with strong potential for higher-level motorsport.\r\n\r\nKnown for his smooth driving style, strategic thinking, and ability to manage tires under pressure, Colapinto has impressed team managers and scouts alike. His maturity and composure on track, despite his young age, make him stand out among his peers.\r\n\r\nFranco Colapinto is considered a rising star with the potential to reach Formula 2 and ultimately Formula 1. With continued development and strong results, he is expected to become one of Argentina’s most successful drivers in modern international motorsport.",
+    "image": "drivers/colapinto.jpeg",
+    "driver_image": "drivers/2025alpinefracol01right.avif",
+    "color_class": "colapinto-bg"
+  }
+},
+{
+  "model": "main.career",
+  "pk": 1,
+  "fields": {
+    "driver": 9,
+    "team": 2,
+    "championships_current": 0,
+    "championships_max": 7,
+    "wins_current": 5,
+    "wins_max": 152,
+    "podiums_current": 24,
+    "podiums_max": 152,
+    "poles_current": 8,
+    "poles_max": 152,
+    "starts": 152,
+    "fastest_laps": 11,
+    "best_finish": 1,
+    "best_grid": 1,
+    "points": 1033,
+    "retirements": 19,
+    "color_class": "russell-bg"
+  }
+},
+{
+  "model": "main.career",
+  "pk": 2,
+  "fields": {
+    "driver": 10,
+    "team": 2,
+    "championships_current": 0,
+    "championships_max": 1,
+    "wins_current": 0,
+    "wins_max": 24,
+    "podiums_current": 3,
+    "podiums_max": 24,
+    "poles_current": 0,
+    "poles_max": 24,
+    "starts": 24,
+    "fastest_laps": 3,
+    "best_finish": 2,
+    "best_grid": 2,
+    "points": 150,
+    "retirements": 4,
+    "color_class": "antonelli-bg"
+  }
+},
+{
+  "model": "main.career",
+  "pk": 3,
+  "fields": {
+    "driver": 6,
+    "team": 5,
+    "championships_current": 1,
+    "championships_max": 7,
+    "wins_current": 11,
+    "wins_max": 152,
+    "podiums_current": 44,
+    "podiums_max": 152,
+    "poles_current": 16,
+    "poles_max": 152,
+    "starts": 152,
+    "fastest_laps": 17,
+    "best_finish": 1,
+    "best_grid": 1,
+    "points": 1430,
+    "retirements": 14,
+    "color_class": "norris-bg"
+  }
+},
+{
+  "model": "main.career",
+  "pk": 4,
+  "fields": {
+    "driver": 5,
+    "team": 5,
+    "championships_current": 0,
+    "championships_max": 3,
+    "wins_current": 9,
+    "wins_max": 70,
+    "podiums_current": 26,
+    "podiums_max": 70,
+    "poles_current": 6,
+    "poles_max": 70,
+    "starts": 70,
+    "fastest_laps": 9,
+    "best_finish": 1,
+    "best_grid": 1,
+    "points": 799,
+    "retirements": 4,
+    "color_class": "piastri-bg"
+  }
+},
+{
+  "model": "main.career",
+  "pk": 5,
+  "fields": {
+    "driver": 7,
+    "team": 3,
+    "championships_current": 4,
+    "championships_max": 11,
+    "wins_current": 71,
+    "wins_max": 233,
+    "podiums_current": 127,
+    "podiums_max": 233,
+    "poles_current": 48,
+    "poles_max": 233,
+    "starts": 233,
+    "fastest_laps": 36,
+    "best_finish": 1,
+    "best_grid": 1,
+    "points": 3444,
+    "retirements": 33,
+    "color_class": "verstappen-bg"
+  }
+},
+{
+  "model": "main.career",
+  "pk": 6,
+  "fields": {
+    "driver": 8,
+    "team": 3,
+    "championships_current": 0,
+    "championships_max": 11,
+    "wins_current": 0,
+    "wins_max": 111,
+    "podiums_current": 0,
+    "podiums_max": 111,
+    "poles_current": 0,
+    "poles_max": 111,
+    "starts": 111,
+    "fastest_laps": 1,
+    "best_finish": 4,
+    "best_grid": 3,
+    "points": 124,
+    "retirements": 15,
+    "color_class": "tsunoda-bg"
+  }
+},
+{
+  "model": "main.career",
+  "pk": 7,
+  "fields": {
+    "driver": 4,
+    "team": 4,
+    "championships_current": 7,
+    "championships_max": 19,
+    "wins_current": 105,
+    "wins_max": 380,
+    "podiums_current": 202,
+    "podiums_max": 380,
+    "poles_current": 104,
+    "poles_max": 380,
+    "starts": 380,
+    "fastest_laps": 69,
+    "best_finish": 1,
+    "best_grid": 1,
+    "points": 5018,
+    "retirements": 34,
+    "color_class": "hamilton-bg"
+  }
+},
+{
+  "model": "main.career",
+  "pk": 8,
+  "fields": {
+    "driver": 11,
+    "team": 8,
+    "championships_current": 0,
+    "championships_max": 9,
+    "wins_current": 0,
+    "wins_max": 189,
+    "podiums_current": 3,
+    "podiums_max": 189,
+    "poles_current": 1,
+    "poles_max": 189,
+    "starts": 189,
+    "fastest_laps": 0,
+    "best_finish": 3,
+    "best_grid": 1,
+    "points": 325,
+    "retirements": 30,
+    "color_class": "stroll-bg"
+  }
+},
+{
+  "model": "main.career",
+  "pk": 9,
+  "fields": {
+    "driver": 12,
+    "team": 8,
+    "championships_current": 2,
+    "championships_max": 22,
+    "wins_current": 32,
+    "wins_max": 425,
+    "podiums_current": 106,
+    "podiums_max": 425,
+    "poles_current": 22,
+    "poles_max": 425,
+    "starts": 425,
+    "fastest_laps": 26,
+    "best_finish": 1,
+    "best_grid": 1,
+    "points": 2393,
+    "retirements": 81,
+    "color_class": "alonso-bg"
+  }
+},
+{
+  "model": "main.career",
+  "pk": 10,
+  "fields": {
+    "driver": 21,
+    "team": 11,
+    "championships_current": 0,
+    "championships_max": 9,
+    "wins_current": 1,
+    "wins_max": 177,
+    "podiums_current": 5,
+    "podiums_max": 177,
+    "poles_current": 0,
+    "poles_max": 177,
+    "starts": 177,
+    "fastest_laps": 3,
+    "best_finish": 1,
+    "best_grid": 2,
+    "points": 458,
+    "retirements": 26,
+    "color_class": "gasly-bg"
+  }
+},
+{
+  "model": "main.career",
+  "pk": 11,
+  "fields": {
+    "driver": 22,
+    "team": 11,
+    "championships_current": 0,
+    "championships_max": 2,
+    "wins_current": 0,
+    "wins_max": 26,
+    "podiums_current": 0,
+    "podiums_max": 26,
+    "poles_current": 0,
+    "poles_max": 26,
+    "starts": 26,
+    "fastest_laps": 0,
+    "best_finish": 8,
+    "best_grid": 8,
+    "points": 5,
+    "retirements": 3,
+    "color_class": "colapinto-bg"
+  }
+},
+{
+  "model": "main.career",
+  "pk": 12,
+  "fields": {
+    "driver": 15,
+    "team": 9,
+    "championships_current": 0,
+    "championships_max": 9,
+    "wins_current": 1,
+    "wins_max": 180,
+    "podiums_current": 4,
+    "podiums_max": 180,
+    "poles_current": 0,
+    "poles_max": 180,
+    "starts": 180,
+    "fastest_laps": 1,
+    "best_finish": 1,
+    "best_grid": 3,
+    "points": 483,
+    "retirements": 24,
+    "color_class": "ocon-bg"
+  }
+},
+{
+  "model": "main.career",
+  "pk": 13,
+  "fields": {
+    "driver": 16,
+    "team": 9,
+    "championships_current": 0,
+    "championships_max": 2,
+    "wins_current": 0,
+    "wins_max": 27,
+    "podiums_current": 0,
+    "podiums_max": 27,
+    "poles_current": 0,
+    "poles_max": 27,
+    "starts": 27,
+    "fastest_laps": 0,
+    "best_finish": 4,
+    "best_grid": 8,
+    "points": 48,
+    "retirements": 3,
+    "color_class": "bearman-bg"
+  }
+},
+{
+  "model": "main.career",
+  "pk": 14,
+  "fields": {
+    "driver": 19,
+    "team": 10,
+    "championships_current": 0,
+    "championships_max": 14,
+    "wins_current": 0,
+    "wins_max": 250,
+    "podiums_current": 1,
+    "podiums_max": 250,
+    "poles_current": 1,
+    "poles_max": 250,
+    "starts": 150,
+    "fastest_laps": 2,
+    "best_finish": 3,
+    "best_grid": 1,
+    "points": 622,
+    "retirements": 42,
+    "color_class": "hulkenberg-bg"
+  }
+},
+{
+  "model": "main.career",
+  "pk": 15,
+  "fields": {
+    "driver": 20,
+    "team": 10,
+    "championships_current": 0,
+    "championships_max": 1,
+    "wins_current": 0,
+    "wins_max": 24,
+    "podiums_current": 0,
+    "podiums_max": 24,
+    "poles_current": 0,
+    "poles_max": 24,
+    "starts": 24,
+    "fastest_laps": 0,
+    "best_finish": 6,
+    "best_grid": 7,
+    "points": 19,
+    "retirements": 5,
+    "color_class": "bortoleto-bg"
+  }
+},
+{
+  "model": "main.career",
+  "pk": 16,
+  "fields": {
+    "driver": 17,
+    "team": 7,
+    "championships_current": 0,
+    "championships_max": 3,
+    "wins_current": 0,
+    "wins_max": 35,
+    "podiums_current": 0,
+    "podiums_max": 35,
+    "poles_current": 0,
+    "poles_max": 35,
+    "starts": 35,
+    "fastest_laps": 0,
+    "best_finish": 5,
+    "best_grid": 3,
+    "points": 44,
+    "retirements": 6,
+    "color_class": "lawson-bg"
+  }
+},
+{
+  "model": "main.career",
+  "pk": 17,
+  "fields": {
+    "driver": 18,
+    "team": 7,
+    "championships_current": 0,
+    "championships_max": 1,
+    "wins_current": 0,
+    "wins_max": 23,
+    "podiums_current": 1,
+    "podiums_max": 23,
+    "poles_current": 0,
+    "poles_max": 23,
+    "starts": 23,
+    "fastest_laps": 0,
+    "best_finish": 3,
+    "best_grid": 4,
+    "points": 51,
+    "retirements": 2,
+    "color_class": "hadjar-bg"
+  }
+},
+{
+  "model": "main.career",
+  "pk": 18,
+  "fields": {
+    "driver": 3,
+    "team": 4,
+    "championships_current": 0,
+    "championships_max": 11,
+    "wins_current": 8,
+    "wins_max": 143,
+    "podiums_current": 39,
+    "podiums_max": 143,
+    "poles_current": 27,
+    "poles_max": 143,
+    "starts": 143,
+    "fastest_laps": 9,
+    "best_finish": 1,
+    "best_grid": 1,
+    "points": 1074,
+    "retirements": 22,
+    "color_class": "leclerc-bg"
+  }
+},
+{
+  "model": "main.career",
+  "pk": 19,
+  "fields": {
+    "driver": 13,
+    "team": 6,
+    "championships_current": 0,
+    "championships_max": 6,
+    "wins_current": 0,
+    "wins_max": 128,
+    "podiums_current": 2,
+    "podiums_max": 128,
+    "poles_current": 0,
+    "poles_max": 128,
+    "starts": 128,
+    "fastest_laps": 1,
+    "best_finish": 3,
+    "best_grid": 4,
+    "points": 313,
+    "retirements": 22,
+    "color_class": "albon-bg"
+  }
+},
+{
+  "model": "main.career",
+  "pk": 20,
+  "fields": {
+    "driver": 14,
+    "team": 6,
+    "championships_current": 0,
+    "championships_max": 11,
+    "wins_current": 4,
+    "wins_max": 229,
+    "podiums_current": 29,
+    "podiums_max": 229,
+    "poles_current": 6,
+    "poles_max": 229,
+    "starts": 229,
+    "fastest_laps": 4,
+    "best_finish": 1,
+    "best_grid": 1,
+    "points": 1336,
+    "retirements": 41,
+    "color_class": "sainz-bg"
+  }
+},
+{
+  "model": "main.profile",
+  "pk": 6,
+  "fields": {
+    "user": 10,
+    "avatar": "avatars/cat.jpg",
+    "favorite_team": 3,
+    "favorite_driver": 2,
+    "country": "Ukraine"
+  }
+},
+{
+  "model": "main.profile",
+  "pk": 7,
+  "fields": {
+    "user": 11,
+    "avatar": "avatars/cool_cat.jpg",
+    "favorite_team": 2,
+    "favorite_driver": 7,
+    "country": "Netherland"
+  }
+}
+]

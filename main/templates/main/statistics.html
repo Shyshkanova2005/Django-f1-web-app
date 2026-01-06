@@ -1,0 +1,420 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Statistics{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'main/statistics.css' %}">
+{% endblock %}
+
+{% block content %}
+<main class="container pt-5 text-dark">
+<h1 class="main-header" >F1 Championship Standings 2025</h1>
+<div class="stat-conteiner">
+    <h2>Championship Progress</h2>
+    <div class="chart-wrapper">
+        <div class="chart-area">
+            <canvas id="pointsChart"></canvas>
+        </div>
+         <div class="driver-panel">
+        <div class="drivers-title"><h2>Drivers</h2></div>
+        <div id="driverButtons" class="driver-buttons-right"></div>
+    </div>
+    </div>
+</div>
+
+<div class="container-graphic">
+<div class="standings-container" style="display: flex; gap: 40px; margin-bottom: 50px; align-items: center;">
+    <div id="fastestTable" style="flex: 1 1 auto; max-width: 600px;">
+        <h2 style="font-weight: 800;">FASTEST LAPS</h2>
+        <div class="table-wrapper" style="overflow-x:auto;">
+            <table class="table table-bordered" style="width:100%;">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>DRIVER</th>
+                        <th>TEAM</th>
+                        <th>FASTEST LAPS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for d in fastest %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td class="driver-cell">{{ d.name }}</td>
+                        <td class="team-cell">
+                            <img src="{{ d.image.url }}" alt="{{ d.name }}" style="width:30px; height:30px; object-fit:contain;">
+                            {{ d.team }}
+                        </td>
+                        <td class="laps-cell">{{ d.lap }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="stats-chart" style="flex: 0 0 400px; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="text-align:center;">Share of Fastest Laps</h2>
+        <canvas id="fastestChart" width="400" height="400" style="display:block; margin:0 auto;"></canvas>
+    </div>
+</div>    
+</div>
+
+<div class="container-graphic">
+ <div class="standings-container" style="display: flex; gap: 40px; margin-bottom: 50px; align-items: center;">
+    <div id="poleTable" style="flex: 1 1 auto; max-width: 600px;">
+        <h2 style="font-weight: 800;">POLE POSITION</h2>
+        <div class="table-wrapper" style="overflow-x:auto;">
+            <table class="table table-bordered" style="width:100%;">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>DRIVER</th>
+                        <th>TEAM</th>
+                        <th>POLE POSITION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for p in pole %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td class="driver-cell">{{ p.name }}</td>
+                        <td class="team-cell">
+                            <img src="{{ p.image.url }}" alt="{{ p.name }}" style="width:30px; height:30px; object-fit:contain;">
+                            {{ p.team }}
+                        </td>
+                        <td class="laps-cell">{{ p.pole }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="stats-chart" style="flex: 0 0 400px; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="text-align:center;">Share of Pole Position</h2>
+        <canvas id="poleChart" width="350" height="350" style="display:block; margin:0 auto;"></canvas>
+    </div>
+</div>
+</div>
+
+<div class="container-graphic">
+<div class="standings-container" style="display: flex; gap: 40px; margin-bottom: 50px; align-items: center;">
+    <div id="podiumsTable" style="flex: 1 1 auto; max-width: 600px;">
+        <h2 style="font-weight: 800;">PODIUMS</h2>
+        <div class="table-wrapper" style="overflow-x:auto;">
+            <table class="table table-bordered" style="width:100%;">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>DRIVER</th>
+                        <th>TEAM</th>
+                        <th>PODIUMS</th>
+                    </tr>
+                </thead>
+                <tbody>
+              {% for pod in podium %}
+                    <tr class="podium-row" {% if forloop.counter > 5 %}style="display:none"{% endif %}>
+                        <td>{{ forloop.counter }}</td>
+                        <td class="driver-cell">{{ pod.name }}</td>
+                        <td class="team-cell">{{ pod.team }}</td>
+                        <td class="laps-cell">{{ pod.podiums }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            {% if podium|length > 5 %}
+        <div style="text-align: center; margin-top: 10px;">
+            <button id="viewAllPodiumBtn" style="background:none; border:none; cursor:pointer; font-weight:600;">View All</button>
+        </div>
+        {% endif %}
+        </div>
+    </div>
+    <div class="stats-chart" style="flex: 0 0 400px; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="text-align:center;">Podiums Share</h2>
+        <canvas id="podiumsChart" width="400" height="400" style="display:block; margin:0 auto;"></canvas>
+    </div>
+</div>    
+</div>
+
+<div class="container-graphic">
+ <div class="standings-container" style="display: flex; gap: 40px; margin-bottom: 50px; align-items: center;">
+    <div id="dnfTable" style="flex: 1 1 auto; max-width: 600px;">
+        <h2 style="font-weight: 800;">DNF (Did Not Finish)</h2>
+        <div class="table-wrapper" style="overflow-x:auto;">
+            <table class="table table-bordered" style="width:100%;">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>DRIVER</th>
+                        <th>TEAM</th>
+                        <th>DNF</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for d in dnf %}
+                    <tr class="dnf-row" {% if forloop.counter > 5 %}style="display:none"{% endif %}> 
+                        <td>{{ forloop.counter }}</td>
+                        <td class="driver-cell">{{ d.name }}</td>
+                        <td class="team-cell">{{ d.team }}</td>
+                        <td class="laps-cell">{{ d.dnf }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        {% if dnf|length > 5 %}
+        <div style="text-align: center; margin-top: 10px;">
+            <button id="viewAllDnfBtn" style="background:none; border:none; cursor:pointer; font-weight:600;">View All</button>
+        </div>
+        {% endif %}
+    </div>
+ </div>
+    <div class="stats-chart" style="flex: 0 0 400px; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="text-align:center;">DNF</h2>
+        <canvas id="dnfChart" width="400" height="400" style="display:block; margin:0 auto;"></canvas>
+    </div>
+</div>   
+</div>
+</div>
+</main>
+{{ fastest_data|json_script:"fastest-data" }}
+{{ pole_data|json_script:"pole-data" }}
+{{ podium_data|json_script:"podium-data" }}
+{{ dnf_data|json_script:"dnf-data" }}
+
+{{ rounds|json_script:"rounds-data" }}
+{{ drivers|json_script:"drivers-data" }}
+{{ data|json_script:"points-data" }}
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const dnfData = JSON.parse(document.getElementById("dnf-data").textContent);
+    const dnfColors = [
+        '#0000FF','#005041','#0090FF','#00D2BE','#FFD700',
+        '#005A9C','#000000','#0090FF','#0090FF','#FF8700',
+        '#E8002D','#E8002D','#900000','#005041','#0A2B4D',
+        '#0000FF','#0090FF','#0A2B4D','#FF8700'
+    ];
+
+    new Chart(document.getElementById('dnfChart'), {
+        type: 'bar',
+        data: {
+            labels: dnfData.labels,
+            datasets: [{
+                label: 'DNF',
+                data: dnfData.dnf,
+                backgroundColor: dnfColors.slice(0, dnfData.labels.length),
+                borderColor: '#fff',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            indexAxis: 'y',
+            responsive: true,
+            plugins: {
+                legend: { display: false },
+                tooltip: { callbacks: { label: ctx => `${ctx.label}: ${ctx.parsed.x} DNFs` } }
+            },
+            scales: {
+                x: { beginAtZero: true, title: { display: true, text: 'Number of DNFs' } },
+                y: { title: { display: true, text: 'Driver' } }
+            }
+        }
+    });
+
+
+const poleData = JSON.parse(document.getElementById("pole-data").textContent);
+const poleColors = [
+    '#00008B','#FF7518','#FFA500','#40E0D0','#FF0000',
+    '#1ABC9C','#2ECC71','#3498DB','#E74C3C','#F39C12'
+];
+
+new Chart(document.getElementById('poleChart'), {
+    type: 'bar',
+    data: {
+        labels: poleData.labels,
+        datasets: [{
+            label: 'Pole Positions',
+            data: poleData.poles,
+            backgroundColor: poleColors.slice(0, poleData.labels.length),
+            borderColor: '#fff',
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: { display: false },
+            tooltip: {
+                callbacks: {
+                    label: ctx => `${ctx.label}: ${ctx.parsed.y} poles`
+                }
+            }
+        },
+        scales: {
+            y: {
+                beginAtZero: true,
+                title: { display: true, text: 'Number of Poles' }
+            },
+            x: {
+                title: { display: true, text: 'Driver' }
+            }
+        }
+    }
+});
+
+    const rounds  = JSON.parse(document.getElementById("rounds-data").textContent);
+    const drivers = JSON.parse(document.getElementById("drivers-data").textContent);
+    const data    = JSON.parse(document.getElementById("points-data").textContent);
+
+    const colors = ['#FF5733','#33FF57','#3357FF','#F4C542','#9B59B6','#1ABC9C','#2ECC71','#3498DB','#E74C3C','#F39C12'];
+    const lineStyles = ["solid","dashed","dotted","dashDot"];
+    const defaultVisibleDrivers = ["Norris", "Piastri", "Verstappen", "Leclerc", "Russell"];
+
+    const datasets = drivers.map((driver, i) => {
+        const surname = driver.split(" ").slice(-1)[0];
+        return {
+            label: driver,
+            data: data[driver],
+            borderColor: colors[i % colors.length],
+            borderDash:
+                lineStyles[i % lineStyles.length] === "solid" ? [] :
+                lineStyles[i % lineStyles.length] === "dashed" ? [10,5] :
+                lineStyles[i % lineStyles.length] === "dotted" ? [2,6] :
+                [10,5,2,5],
+            borderWidth: 2,
+            tension: 0.2,
+            pointRadius: 3,
+            hidden: !defaultVisibleDrivers.includes(surname)
+        };
+    });
+
+    const chart = new Chart(
+        document.getElementById("pointsChart").getContext("2d"), {
+        type: "line",
+        data: { labels: rounds, datasets },
+        options: {
+            responsive: true,
+            animation: { duration: 1000 },
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    enabled: true,
+                    mode: 'index',
+                    intersect: false,
+                    callbacks: {
+                        label: ctx =>
+                            ctx.dataset.hidden ? null :
+                            `${ctx.dataset.label} — Round ${ctx.label}: ${ctx.parsed.y} pts`
+                    }
+                }
+            },
+            interaction: { mode: 'index', intersect: false },
+            scales: {
+                x: { title: { display: true, text: 'Round' } },
+                y: { title: { display: true, text: 'Points' }, beginAtZero: true }
+            }
+        }
+    });
+
+    const container = document.getElementById("driverButtons");
+
+    drivers.forEach((driver, i) => {
+        const btn = document.createElement("button");
+        btn.className = `driver-button ${datasets[i].hidden ? "inactive" : "active"}`;
+
+        const surname = driver.split(" ").slice(-1)[0];
+        const shortName = surname.slice(0,3).toUpperCase();
+        const icon = datasets[i].hidden ? "👁‍🗨" : "👁";
+
+        const lineStyleClass =
+            lineStyles[i % lineStyles.length] === "solid" ? "line-solid" :
+            lineStyles[i % lineStyles.length] === "dashed" ? "line-dashed" :
+            lineStyles[i % lineStyles.length] === "dotted" ? "line-dotted" :
+            "line-dashdot";
+
+        btn.innerHTML = `
+            <span>${shortName}</span>
+            <div class="line-style-indicator ${lineStyleClass}"
+                 style="border-top-color:${colors[i % colors.length]}"></div>
+            <span class="status-icon">${icon}</span>
+        `;
+
+        btn.addEventListener("click", () => {
+            datasets[i].hidden = !datasets[i].hidden;
+            btn.classList.toggle("active");
+            btn.classList.toggle("inactive");
+            btn.querySelector(".status-icon").textContent =
+                datasets[i].hidden ? "👁‍🗨" : "👁";
+            chart.update();
+        });
+
+        container.appendChild(btn);
+    });
+
+    const doughnut = (id, labels, values, colors) =>
+    new Chart(document.getElementById(id), {
+        type: 'doughnut',
+        data: {
+            labels: labels,
+            datasets: [{
+                data: values,
+                backgroundColor: colors,
+                borderColor: '#fff',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            cutout: '65%',
+            responsive: true,
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'right',
+                    labels: {
+                        boxWidth: 12,
+                        boxHeight: 12,
+                        padding: 12,
+                        font: {
+                            size: 12,
+                            weight: '500'
+                        }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        label: ctx => `${ctx.label}: ${ctx.parsed}`
+                    }
+                }
+            }
+        }
+    });
+
+    const fastest = JSON.parse(document.getElementById("fastest-data").textContent);
+    doughnut("fastestChart", fastest.labels, fastest.laps,
+        ['#FF7518','#FFA500','#40E0D0','#40B5AD','#000080','#FF3131']);
+
+    const podium = JSON.parse(document.getElementById("podium-data").textContent);
+    doughnut("podiumsChart", podium.labels, podium.podiums,
+        ['#FF7518','#FFA500','#00008B','#40E0D0','#FF0000']);
+
+    const toggleRows = (btnId, rowClass) => {
+        const btn = document.getElementById(btnId);
+        if (!btn) return;
+
+        btn.addEventListener("click", () => {
+            const rows = [...document.querySelectorAll(`.${rowClass}`)].slice(5);
+            const hidden = rows[0].style.display === "none";
+            rows.forEach(r => r.style.display = hidden ? "table-row" : "none");
+            btn.textContent = hidden ? "View Less" : "View All";
+        });
+    };
+
+    toggleRows("viewAllDnfBtn", "dnf-row");
+    toggleRows("viewAllPodiumBtn", "podium-row");
+
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+{% endblock %}

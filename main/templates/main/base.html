@@ -1,0 +1,147 @@
+{% load static %}
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/main.css' %}">
+    {% block extra_css %}{% endblock %}
+  </head>
+   <header class="{% block header_margin %}mb-0{% endblock %}">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark f1-navbar">
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center" href="{% url 'index' %}">
+                <img src="{% static 'main/photo/logo.png' %}" alt="Logo" width="70" height="40" class="me-2">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="{% url 'teams' %}">Teams</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="{% url 'circuits' %}">Tracks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="{% url 'statistics' %}">Statistics</a>
+                    </li>
+                </ul>
+
+                {% if user.is_authenticated %}
+                <div class="dropdown">
+                  <a href="#" class="d-block text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    {% if profile.avatar and profile.avatar.name %}
+                        <img src="{{ profile.avatar.url }}" class="rounded-circle" width="36" height="36" alt="Avatar">
+                    {% else %}
+                        <img src="{% static 'main/photo/profile.png' %}" class="rounded-circle" width="36" height="36" alt="Default avatar">
+                    {% endif %}
+                    </a>
+                    
+                    <ul class="dropdown-menu dropdown-menu-end text-small">
+                        <li class="dropdown-item-text fw-semibold">
+                            {{ user.username }}
+                        </li>
+
+                        <li><hr class="dropdown-divider"></li>
+                         <li>
+                            <a class="dropdown-item" href="{% url 'profile' %}">
+                            <i class="person"></i> Profile
+                            </a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+
+                        <li>
+                            <form method="post" action="{% url 'logout' %}" class="m-0">
+                            {% csrf_token %}
+                                <a href="#" class="dropdown-item text-danger" onclick="this.closest('form').submit(); return false;">
+                                <i class="bi bi-box-arrow-right"></i> Logout
+                                </a>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                {% else %}
+                <a class="nav-link" href="{% url 'authorize' %}">
+                    <img src="{% static 'main/photo/profile.png' %}" width="36" height="36">
+                </a>
+                {% endif %}  
+                </div>
+                    
+            </div>
+
+        </div>
+    </nav>
+</header>
+{% block content %}{% endblock %}   
+<footer class="mt-5 py-5  ">
+    <div class="container">
+    <div class="row g-4 mb-5">
+        <div class="col-lg-6 col-md-12">
+            <h1 class="f1-footer-title mb-3 text-uppercase">Formula 1 Teams <span class="text-danger">2025</span></h1>
+            <p class="text-secondary small pe-lg-5">
+              The most complete database of teams and drivers for the 2025 season. Follow the results and statistics of your favorite stables.
+            </p>
+        </div>
+
+        <div class="col-lg-3 col-6">
+            <ul class="list-unstyled d-flex flex-column gap-2 fw-bold text-uppercase" style="font-size: 0.85rem;">
+                <li><a href="{% url 'teams' %}" class="text-dark text-decoration-none hover-red">Teams</a></li>
+                <li><a href="{% url 'circuits' %}" class="text-dark text-decoration-none hover-red">Tracks</a></li>
+                <li><a href="{% url 'statistics' %}" class="text-dark text-decoration-none hover-red">Statistics</a></li>
+            </ul>
+        </div>
+
+        <div class="col-lg-3 col-6 text-lg-end">
+            <div class="social-links d-flex gap-3 justify-content-lg-end fs-4 mb-3">
+                <a href="https://www.facebook.com/Formula1" target="_blank" rel="noopener" class="text-dark">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://twitter.com/F1" target="_blank" rel="noopener" class="text-dark">
+                <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://www.instagram.com/f1/" target="_blank" rel="noopener" class="text-dark">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@Formula1" target="_blank" rel="noopener" class="text-dark">
+                <i class="bi bi-youtube"></i>
+            </a>
+            </div>
+            <img src="{% static 'main/photo/logo.png' %}" alt="Logo" width="90" height="60"  class="opacity-75">
+        </div>
+    </div>
+
+    <div class="f1-line-v2 mb-3"></div>
+
+    <div class="d-flex justify-content-between align-items-center">
+      <small class="text-body-secondary">&copy; 2025 - Fan-made project. Not affiliated with Formula 1</small>
+    </div>
+    </div>
+</footer>
+<script>
+    let lastScroll = 0;
+    const header = document.querySelector('.f1-navbar');
+
+    window.addEventListener('scroll', () => {
+    const current = window.pageYOffset;
+
+    if (current > lastScroll && current > 100) {
+        header.style.transform = 'translateY(-100%)';
+    } else {
+        header.style.transform = 'translateY(0)';
+    }
+
+    lastScroll = current;
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

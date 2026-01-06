@@ -1,0 +1,145 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block header_margin %}mb-0{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'main/about_teams.css' %}">
+{% endblock %}
+
+{% block content %}
+<main class="team-page-wrapper">
+  <div class="position-relative overflow-hidden pt-5 text-center {{ team.color_class }} text-white hero-section">
+    
+    <div class="bg-name-container">
+        <h1 class="hero-title-large">{{ team.name }}</h1>
+    </div>
+
+    <div class="col-md-10 mx-auto my-5 position-relative" style="z-index: 2;">
+      <div class="hero-car-wrapper mb-4">
+        <img src="{{ team.car_image.url }}" class="img-fluid hero-car" alt="{{ team.name }} car">
+      </div>
+
+      
+      <div class="hero-footer-info">
+        <div class="d-flex justify-content-center align-items-center gap-3 my-3">
+          <span class="fw-bold fs-4">{{ team.driver1_name }}</span>
+          <div class="mini-logo-circle">
+              <img src="{{ team.logo.url }}" alt="Logo" class="mini-logo">
+          </div>
+          <span class="fw-bold fs-4">{{ team.driver2_name }}</span>
+        </div>
+        <a href="{% url 'statistics' %}" class="btn btn-outline-light rounded-pill px-5 py-2 mt-2">Season Stats</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-5">
+  <h2 class="display-6 fw-bold mb-4 text-uppercase text-black hero-title">Drivers</h2>
+  <div class="row g-4 mb-5">
+    
+    <div class="col-md-6">
+      {% if driver1 %}
+      <a href="{% url 'driver_detail' driver_slug=driver1.slug %}" class="text-decoration-none">
+        <div class="driver-card {{ team.color_class }} text-white">
+          <div class="driver-text-info">
+            <h3>{{ team.driver1_name }}</h3>
+            <p>{{ team.name }}</p>
+            <span class="driver-number">{{ team.driver1_number }}</span>
+          </div>
+          <img src="{{ team.driver1_image.url }}" class="driver-photo" alt="{{ team.driver1_name }}">
+        </div>
+      </a>
+      {% endif %}
+    </div>
+
+    <div class="col-md-6">
+      {% if driver2 %}
+      <a href="{% url 'driver_detail' driver_slug=driver2.slug %}" class="text-decoration-none">
+        <div class="driver-card {{ team.color_class }} text-white">
+          <div class="driver-text-info">
+            <h3>{{ team.driver2_name }}</h3>
+            <p>{{ team.name }}</p>
+            <span class="driver-number">{{ team.driver2_number }}</span>
+          </div>
+          <img src="{{ team.driver2_image.url }}" class="driver-photo" alt="{{ team.driver2_name }}">
+        </div>
+      </a>
+      {% endif %}
+    </div>
+
+    <div class="col-12 mt-4">
+    <div class="stats-container">
+      <h2 class="stats-main-title">STATISTICS</h2>
+      <h3 class="stats-season-title">2025 SEASON</h3>
+
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-label">Season Position</span>
+          <span class="stat-value">{{ stats.season_position }}nd</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Season Points</span>
+          <span class="stat-value">{{ stats.season_oints }}</span>
+        </div>
+
+        <div class="stats-divider"></div>
+
+        <div class="stat-item">
+          <span class="stat-label">Grand Prix Races</span>
+          <span class="stat-value">{{ stats.prix_races }}</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Grand Prix Points</span>
+          <span class="stat-value">{{ stats.prix_points }}</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Grand Prix Wins</span>
+          <span class="stat-value">{{ stats.prix_wins }}</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Grand Prix Podiums</span>
+          <span class="stat-value">{{ stats.prix_podiums }}</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">DHL Fastest Laps</span>
+          <span class="stat-value">{{ stats.dhl }}</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">DNFs</span>
+          <span class="stat-value">{{ stats.dnfs }}</span>
+        </div>
+
+        <div class="stats-divider"></div>
+
+        <div class="stat-item">
+          <span class="stat-label">Sprint Races</span>
+          <span class="stat-value">{{ stats.sprint_races }}</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Sprint Poles</span>
+          <span class="stat-value">{{ stats.sprint_poles }}</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Sprint Wins</span>
+          <span class="stat-value">{{ stats.sprint_wins }}</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Sprint Top 10s</span>
+          <span class="stat-value">{{ stats.top }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="col-12 mt-5">
+        <div class="col-12 p-4 rounded-4 bg-dark text-white border-start border-4 border-info">
+            <h2 class="fw-bold text-uppercase mb-3">Team Profile</h2>
+            <p class="lead opacity-75" style="line-height: 1.8;">{{ team.description }}</p>
+        </div>
+     </div>
+  </div>
+</div>
+</div>
+</main>
+{% endblock %}

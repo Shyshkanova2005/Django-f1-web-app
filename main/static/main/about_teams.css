@@ -1,0 +1,298 @@
+.hero-title {
+    letter-spacing: -2px;
+    line-height: 0.8;
+    margin-bottom: 20px;
+}
+
+.hero-car {
+    max-width: 800px;
+    filter: drop-shadow(0 15px 30px rgba(0,0,0,0.4));
+}
+
+.team-page-wrapper {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.mini-logo-circle {
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.mini-logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.driver-card {
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.driver-card:hover {
+    transform: translateY(-5px);
+}
+
+.driver-photo {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.hero-section {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 50px;
+}
+
+.bg-name-container {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    pointer-events: none;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero-title-large {
+    font-size: 15vw; 
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.1); 
+    letter-spacing: -5px;
+    margin: 0;
+}
+
+.hero-car-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-footer-info {
+    position: relative;
+    z-index: 3;
+    margin-top: -30px; 
+}
+
+.btn-outline-light.rounded-pill {
+    border-width: 1px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light.rounded-pill:hover {
+    background-color: white;
+    color: black;
+}
+
+.section-title {
+    font-weight: 900;
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+}
+
+.mercedes-bg.driver-card {
+    background: linear-gradient(160deg, #007A73 0%, #00A19C 80%) !important;
+}
+
+.redbull-bg.driver-card {
+    background: linear-gradient(90deg,#060C1F 0%,#0B1A4A 100%) !important;
+}
+
+.mclaren-bg.driver-card {
+    background: linear-gradient(160deg, #D86A00 0%, #E6A66A 80%)!important;
+}
+
+.williams-bg.driver-card {
+    background: linear-gradient(160deg, #37B2E5 0%, #005BAC 80%)!important;
+}
+
+.racingbulls-bg .driver-card {
+    background: linear-gradient(160deg, #0D1B4C 0%, #3B4F8C 80%)!important;
+}
+
+.astonmartin-bg .driver-card {
+    background: linear-gradient(160deg, #00352F 0%, #006F62 80%) !important;
+}
+
+.haas-bg .driver-card {
+    background: linear-gradient(160deg, #1A1A1A 0%, #B80000 80%) !important;
+}
+
+.alpine-bg .driver-card {
+    background: linear-gradient(160deg, #0B1C2D 0%, #0090FF 80%) !important;
+}
+
+.sauber-bg .driver-card {
+    background: linear-gradient(160deg, #0B0B0B 0%, #00FF4C 80%) !important;
+}
+
+.team-page-wrapper .astonmartin-bg {
+    background: linear-gradient(160deg, #00352f 0%, #006f62 80%);
+}
+
+.team-page-wrapper .haas-bg {
+    background: linear-gradient(160deg, #0b0b0b 0%, #b80000 80%);
+}
+
+.team-page-wrapper .alpine-bg {
+    background: linear-gradient(160deg, #0b1c2d 0%, #0090ff 80%);
+}
+
+.team-page-wrapper .sauber-bg {
+    background: linear-gradient(160deg, #0b0b0b 0%, #00ff4c 80%);
+}
+
+.team-page-wrapper .mercedes-bg {
+    background: linear-gradient(160deg, #0b0b0b 0%, #2a2a2a 80%);
+}
+
+.team-page-wrapper .redbull-bg {
+    background: linear-gradient(180deg,#4F83D8 0%,#2F64B8 40%,#062B63 100%);
+}
+
+.team-page-wrapper .ferrari-bg {
+    background: linear-gradient(180deg, #FF2800 0%, #C70000 50%,  #900000 100% );
+}
+
+.team-page-wrapper .mclaren-bg {
+    background: linear-gradient(135deg, #FF8000 0%, #FF9933 50%, #E67300 100%);
+}
+
+.team-page-wrapper .williams-bg {
+    background: linear-gradient(160deg, #37B2E5 0%, #005BAC 80%);
+}
+
+.team-page-wrapper .racingbulls-bg {
+    background: linear-gradient(135deg, #6692FF 0%, #0032FF 100%);
+}
+
+.driver-card {
+    height: 280px;
+    width: 100%;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.driver-text-info {
+    flex: 1;
+    padding: 25px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.driver-text-info h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.driver-text-info p {
+    font-size: 1rem;
+    opacity: 0.85;
+    margin-top: 10px;
+}
+
+.driver-number {
+    position: absolute;
+    left: 20px;
+    bottom: 60px;
+    font-size: 5rem;
+    font-weight: 900;
+    color: rgba(255,255,255,0.25);
+    z-index: 1;
+    line-height: 1;
+}
+
+.driver-photo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 45%;
+    object-fit: cover;          
+    object-position: top center;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.stats-container {
+    background-color: #15151e; 
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+
+.stats-main-title {
+    font-size: 42px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.stats-season-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px 40px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.stat-label {
+    color: #949498; 
+    font-size: 14px;
+    text-transform: none;
+    margin-bottom: 5px;
+}
+
+.stat-value {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.stats-divider {
+    grid-column: span 2;
+    height: 1px;
+    background-color: #38383f;
+    margin: 10px 0;
+}

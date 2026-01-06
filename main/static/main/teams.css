@@ -1,0 +1,61 @@
+.rating-card {
+    position: relative;
+    height: 250px !important; 
+    min-height: 250px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+}
+.rating-card::before,
+.rating-card::after {
+    display: none !important;
+    content: none !important;
+}
+
+.rating-card img.card-img {
+    position: absolute !important;
+    top: auto !important;
+    bottom: 0 !important;   
+    right: 0 !important;    
+    width: 85% !important;            
+    height: auto !important;
+    object-fit: contain;    
+     opacity: 1 !important;         
+    filter: brightness(100%) !important; 
+    z-index: 1 !important; 
+    opacity: 5;
+    pointer-events: none;
+    margin: 0 !important;
+}
+.tema-name {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.driver-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.driver-info h5 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.mclaren-bg { background: linear-gradient(135deg, #ff7a00, #ff9500); }
+.mercedes-bg { background: linear-gradient(135deg, #00a98f, #00d2b8); }
+.redbull-bg { background: linear-gradient(135deg, #1e4dd8, #0b2c66); }
+.ferrari-bg { background: linear-gradient(135deg, #a60014, #e10600); }
+.williams-bg { background: linear-gradient(135deg, #0047ab, #007bff); }
+.racing_bulls-bg { background: linear-gradient(135deg, #6692FF 0%, #0032FF 100%); }
+.aston-martin-bg { background: linear-gradient(135deg, #004f4a, #007a6e); }
+.haas-bg { background: linear-gradient(160deg, #1A1A1A 0%, #B80000 80%); }
+.sauber-bg { background: linear-gradient(135deg, #00ff66, #009944); }
+.alpine-bg { background: linear-gradient(135deg, #0046ff, #ff2fa0); }
+
