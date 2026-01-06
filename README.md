@@ -45,8 +45,7 @@ All pages are built with Django templates, Bootstrap, and custom CSS, with data 
 ## Driver Details (Different Driver Cards)
 <p align="center">
   <img src="docs/screenshots/driver.png" width="45%"/>
-  <img src="docs/screenshots/drivers.png" width="45
-    %"/>
+  <img src="docs/screenshots/drivers.png" width="45%"/>
 </p>
 
 <p align="center">
