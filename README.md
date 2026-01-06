@@ -59,8 +59,8 @@ All pages are built with Django templates, Bootstrap, and custom CSS, with data 
 
 ## Statistics
 <p align="center">
-<img src="docs/screenshots/statistics_first_part.png" width="70%" align="center"/>
-<img src="docs/screenshots/statistics_second_part.png" width="70%" align="center"/>
+<img src="docs/screenshots/statistics.png" width="70%" align="center"/>
+<img src="docs/screenshots/statistics_two.png" width="70%" align="center"/>
 </p>
 
 ## Authorization
