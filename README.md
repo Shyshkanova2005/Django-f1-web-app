@@ -20,11 +20,11 @@ Media & Static: Django static and media files
 ## Screenshots
 
 ## Home Page
-<img src="docs/screenshots/main_first_page.png" width="70%" />
-<img src="docs/screenshots/main_second_page.png" width="70%" />
+<img src="docs/screenshots/main_first_part.png" width="70%" align="center"/>
+<img src="docs/screenshots/main_second_part.png" width="70%" align="center"/>
 
 ## Teams Page
-<img src="docs/screenshots/teams.png" width="70%" />
+<img src="docs/screenshots/teams.png" width="70%" align="center"/>
 
 ## Team Details (Different Team Styles)
 <p align="center">
@@ -39,17 +39,17 @@ Media & Static: Django static and media files
 </p>
 
 ## Tracks
-<img src="docs/screenshots/tracks.png" width="70%" />
+<img src="docs/screenshots/tracks.png" width="70%" align="center"/>
 
 ## Statistics
-<img src="docs/screenshots/statistics_first_part.png" width="70%" />
-<img src="docs/screenshots/statistics_second_part.png" width="70%" />
+<img src="docs/screenshots/statistics_first_part.png" width="70%" align="center"/>
+<img src="docs/screenshots/statistics_second_part.png" width="70%" align="center"/>
 
 ## Authorization
-<img src="docs/screenshots/authorize.png" width="70%" />
+<img src="docs/screenshots/authorize.png" width="70%" align="center"/>
 
 ## User Profile
-<img src="docs/screenshots/profile.png" width="70%" />
+<img src="docs/screenshots/profile.png" width="70%" align="center"/>
 
 # Database & Fixtures
 The project includes pre-filled database data stored as Django fixtures.
