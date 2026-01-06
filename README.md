@@ -4,18 +4,18 @@ drivers, teams, race calendar, statistics, standings and detailed pages.
 The project is built as a full-stack web application using Django, PostgreSQL, and Bootstrap, with dynamic content stored in a database.
 
 # Features
--Formula 1 drivers & teams pages with detailed profiles
--Race calendar with status (completed / next / upcoming)
--Statistics of championship progress, fastest laps, pole positions, podiums and dnfs (didn't finish)
--Driver & Team standings
--Images and data stored in database (fixtures)
--Authentication (login / logout)
+-Formula 1 drivers & teams pages with detailed profiles<br>
+-Race calendar with status (completed / next / upcoming)<br> 
+-Statistics of championship progress, fastest laps, pole positions, podiums and dnfs (didn't finish)<br>
+-Driver & Team standings<br>
+-Images and data stored in database (fixtures)<br>
+-Authentication (login / logout)<br>
 
 # Tech Stack
--Backend: Django (Python)
--Database: PostgreSQL
--Frontend: HTML, CSS, Bootstrap, JavaScript
--Media & Static: Django static and media files
+**Backend:** Django (Python)<br>
+**Database:** PostgreSQL<br>
+**Frontend:** HTML, CSS, Bootstrap, JavaScript<br>
+**Media & Static:** Django static and media files<br>
 
 ## Screenshots
 The screenshots above demonstrate the main pages and functionality of the Formula 1 fan web application.
