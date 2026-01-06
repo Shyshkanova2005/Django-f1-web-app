@@ -42,7 +42,7 @@ All pages are built with Django templates, Bootstrap, and custom CSS, with data 
   <em>10 team pages generated using Django templates</em>
 </p>
 
-## 👨‍✈️ Driver Details (Different Driver Cards)
+## 🧑‍💼 Driver Details (Different Driver Cards)
 <p align="center">
   <img src="docs/screenshots/driver.png" width="45%"/>
   <img src="docs/screenshots/drivers.png" width="45%"/>
