@@ -34,8 +34,8 @@ All pages are built with Django templates, Bootstrap, and custom CSS, with data 
 
 ## Team Details (Different Team Styles)
 <p align="center">
-  <img src="docs/screenshots/teams_mclaren.png" width="45%" />
-  <img src="docs/screenshots/teams_williams.png" width="45%" />
+  <img src="docs/screenshots/teams_mclaren.png" width="450" height="300" style="object-fit: cover;" />
+  <img src="docs/screenshots/teams_williams.png" width="450" height="300" style="object-fit: cover;" />
 </p>
 
 <p align="center">
@@ -44,8 +44,8 @@ All pages are built with Django templates, Bootstrap, and custom CSS, with data 
 
 ## Driver Details (Different Driver Cards)
 <p align="center">
-  <img src="docs/screenshots/driver.png" width="45%" />
-  <img src="docs/screenshots/drivers.png" width="45%" />
+  <img src="docs/screenshots/driver.png" width="450" height="300" style="object-fit: cover;" />
+  <img src="docs/screenshots/drivers.png" width="450" height="300" style="object-fit: cover;" />
 </p>
 
 <p align="center">
