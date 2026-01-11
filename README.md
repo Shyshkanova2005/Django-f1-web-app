@@ -1,4 +1,4 @@
-бо# 🏎️ Formula 1 Fan Web App (Django)
+# 🏎️ Formula 1 Fan Web App (Django)
 A Django-based fan web application dedicated to Formula 1 2025 season providing detailed information about
 drivers, teams, race calendar, statistics, standings and detailed pages.
 The project is built as a full-stack web application using Django, PostgreSQL and Bootstrap, with dynamic content stored in a database.
